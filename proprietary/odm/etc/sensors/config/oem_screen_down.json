@@ -1,0 +1,39 @@
+{
+	"config": {
+		"hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+		"soc_id": ["519", "557", "536", "577","618","660"]
+	},
+	"oem_screen_down": {
+		"owner": "oem_screen_down",
+		".params":{
+			"owner": "oem_screen_down",
+			"switch_angle_z": {
+				"ver": "0", "type": "flt", "data": "-60"
+			},
+			"hysteresis_angle_z": {
+				"ver": "0", "type": "flt", "data": "3"
+			},
+			"critical_angle_z": {
+				"ver": "0", "type": "flt", "data": "5"
+			},
+			"param4": {
+				"ver": "0", "type": "flt", "data": "0"
+			},
+			"is_flat_report": {
+				"ver": "0", "type": "flt", "data": "1"
+			}
+		},
+		".params1": {
+			"owner": "oem_screen_down",
+			"posture_z_up": {
+				"ver": "0", "type": "flt", "data": "-35"
+			},
+			"posture_z_down": {
+				"ver": "0", "type": "flt", "data": "-90"
+			},
+			"posture_hysteresis": {
+				"ver": "0", "type": "flt", "data": "5"
+			}
+		}
+	}
+}

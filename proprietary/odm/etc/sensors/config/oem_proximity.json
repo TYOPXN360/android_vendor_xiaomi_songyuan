@@ -1,0 +1,21 @@
+{
+    "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["660"]
+    },
+    "oem_proximity": {
+      "owner": "oem_proximity",
+      ".feature":{
+        "owner": "oem_proximity",
+            "dynamic_ir_off_feature": {
+              "ver": "0", "type": "flt", "data": "1"
+            },
+            "is_folder": {
+              "ver": "0", "type": "flt", "data": "0"
+            },
+            "is_flip": {
+              "ver": "0", "type": "flt", "data": "0"
+            }
+        }
+    }
+}

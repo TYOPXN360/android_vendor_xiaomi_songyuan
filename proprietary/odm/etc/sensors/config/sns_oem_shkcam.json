@@ -1,0 +1,89 @@
+{
+    "config": {
+        "hw_platform": [
+            "MTP",
+            "Dragon",
+            "Surf",
+            "QRD"
+        ],
+        "soc_id": [
+            "660"
+        ]
+    },
+    "sns_oem_shkcam": {
+        "owner": "sns_oem_shkcam",
+        ".feature": {
+            "owner": "sns_oem_shkcam",
+            "GroX_Fre_maxMin": {
+                "ver": "0",
+                "type": "str",
+                "data": "3.0, 3.0, 3.0"
+            },
+            "GroX_Fre_maxMax": {
+                "ver": "0",
+                "type": "str",
+                "data": "6.0, 6.0, 6.0"
+            },
+            "GroZ_Fre_maxMin1": {
+                "ver": "0",
+                "type": "str",
+                "data": "3.0, 3.0, 3.0"
+            },
+            "GroZ_Fre_maxMax1": {
+                "ver": "0",
+                "type": "str",
+                "data": "6.0, 6.0, 6.0"
+            },
+            "GroZ_Max_value": {
+                "ver": "0",
+                "type": "str",
+                "data": "2.5, 2.5, 2.5"
+            },
+            "GroZ_Fre_maxMin2": {
+                "ver": "0",
+                "type": "flt",
+                "data": "0.5"
+            },
+            "GroZ_Fre_maxMax2": {
+                "ver": "0",
+                "type": "flt",
+                "data": "4.0"
+            },
+            "Gyroz_min": {
+                "ver": "0",
+                "type": "flt",
+                "data": "-12.0"
+            },
+            "Gyroz_max1": {
+                "ver": "0",
+                "type": "flt",
+                "data": "12.0"
+            },
+            "GroZ_Fre_maxMin3": {
+                "ver": "0",
+                "type": "flt",
+                "data": "2.0"
+            },
+            "GroZ_Fre_maxMax3": {
+                "ver": "0",
+                "type": "flt",
+                "data": "6.0"
+            },
+            "Gyroz_max2": {
+                "ver": "0",
+                "type": "flt",
+                "data": "10.0"
+            },
+            "compare_val_gyroX": {
+                "ver": "0",
+                "type": "str",
+                "data": "1.45, 1.70, 1.70, 2.60, 4.50, 4.00, 3.10, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 0.60"
+            },
+            "compare_val_gyroZ": {
+                "ver": "0",
+                "type": "str",
+                "data": "1.45, 3.40, 3.30, 2.80, 2.60, 11.00, 9.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 3.00, 0.60"
+            }
+        }
+    }
+}
