@@ -1,0 +1,9 @@
+# Large blobs split into split-blobs/ due to GitHub 100MB per-file limit.
+# Run ./assemble-blobs.sh before building.
+/proprietary/odm/etc/camera/anc_sdsr_model
+/proprietary/odm/lib64/libarcsoft_raw_sr.so
+/proprietary/odm/etc/camera/sd_unet.minn
+/proprietary/odm/lib64/libarcsoft_dualcam_bokeh_image.so
+/proprietary/odm/lib64/libarcsoft_turbo_hdr_raw.so
+/proprietary/odm/lib64/libarcsoft_pristine_resolution.so
+/proprietary/odm/etc/camera/aisn.bin
