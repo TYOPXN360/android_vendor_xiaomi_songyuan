@@ -1,0 +1,157 @@
+
+{
+    "CameraIdList": {
+        //refer to https://xiaomi.f.mioffice.cn/sheets/shtk4cx4ttQJELifwedevcIXg9b?sheet=wsF5Se
+        "CameraId": [
+            {
+                //CameraId:rear wide
+                "PhysicalId": 1,
+                //ALGO Definition AISP_BAYER_BGRG
+                "BayerPattern": 3,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [3, 9, 16, 20],
+                        "imageWidthList": [4096, 4096, 4096],
+                        "imageHeightList": [3072, 2304, 2560]
+                    },
+                    {
+                        //aisp sensor mode: quad(12.5M)
+                        "aispSensorMode": 15,
+                        "isInSensorZoom": 1,
+                        "SensorModeList": [8, 14,19, 21],
+                        "imageWidthList": [4096, 4096, 4096],
+                        "imageHeightList": [3072, 2304, 2560]
+                    },
+                    {
+                        //aisp sensor mode: dxg combine + binning
+                        "aispSensorMode": 2,
+                        "isFixedCgGain": 1,
+                        "SensorModeList": [6, 12, 18],
+                        "imageWidthList": [4096, 4096, 4096],
+                        "imageHeightList": [3072, 2304, 2560]
+                    },
+                    {
+                        //aisp sensor mode: DOL2 + binning
+                        "aispSensorMode": 5,
+                        "SensorModeList": [7, 13],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    },
+                    {
+                        //aisp sensor mode: LBMF + bining
+                        "aispSensorMode": 10,
+                        "SensorModeList": [4, 10],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    },
+                    {
+                        //aisp sensor mode: quad(50M)
+                        "aispSensorMode": 4,
+                        "qcfaFactor": 2,
+                        "SensorModeList": [2, 15],
+                        "imageWidthList": [8192],
+                        "imageHeightList": [6144]
+                    },
+                    {
+                        //aisp sensor mode: quad(200M)
+                        "aispSensorMode": 20,
+                        "qcfaFactor": 4,
+                        "SensorModeList": [0],
+                        "imageWidthList": [16320],
+                        "imageHeightList": [12288]
+                    }
+                 //   {
+                 //       //aisp sensor mode: QUADFULLCROP
+                 //       "aispSensorMode": 4,
+                 //       "isQuadFullCrop": 1,
+                 //       "QuadFullCropRatio": 1.3913, // 8192/5888
+                 //       "SensorModeList": [37, 42],
+                 //       "imageWidthList": [5888],
+                  //      "imageHeightList": [4166]
+                  //  }
+                ]
+            },
+            {
+                //CameraId:rear ultra
+                "PhysicalId": 3,
+                //ALGO Definition AISP_BAYER_BGGR
+                "BayerPattern": 2,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [1, 4],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    }
+                ]
+           },
+           {
+                //CameraId:rear ultra tele
+                "PhysicalId": 5,
+                //ALGO Definition AISP_BAYER_BGGR
+                "BayerPattern": 2,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [1, 9],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    },
+                    // {
+                    //     //aisp sensor mode: HW remosaic(ISZ-remosaic)
+                    //     "aispSensorMode": 7,
+                    //     "isInSensorZoom": 1,
+                    //     "SensorModeList": [2, 9]
+                    // },
+                    {
+                        //aisp sensor mode: quad(12.5M)
+                        "aispSensorMode": 15,
+                        "isInSensorZoom": 1,
+                        "SensorModeList": [2, 10],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    },
+                    {
+                        //aisp sensor mode: quad(50M)
+                        "aispSensorMode": 4,
+                        "qcfaFactor": 2,
+                        "SensorModeList": [4, 12],
+                        "imageWidthList": [8192, 8192],
+                        "imageHeightList": [6144, 4608]
+                    },
+                    // {
+                    //     //aisp sensor mode: DOL2 + binning
+                    //     "aispSensorMode": 5,
+                    //     "SensorModeList": [5, 11, 105, 111]
+                    // },
+                    {
+                        //aisp sensor mode: LBMF + bining
+                        "aispSensorMode": 10,
+                        "SensorModeList": [3, 11],
+                        "imageWidthList": [4096, 4096],
+                        "imageHeightList": [3072, 2304]
+                    }
+                ]
+            },
+            {
+                //CameraId:front
+                "PhysicalId": 17,
+                //ALGO Definition AISP_BAYER_BGGR
+                "BayerPattern": 2,
+                "AispSensorModeInfoMap":[
+                    {
+                        //aisp sensor mode: binning
+                        "aispSensorMode": 0,
+                        "SensorModeList": [1, 2],
+                        "imageWidthList": [3264, 3264],
+                        "imageHeightList": [2448, 1836]
+                    }
+                ]
+            }
+        ]
+    }
+}

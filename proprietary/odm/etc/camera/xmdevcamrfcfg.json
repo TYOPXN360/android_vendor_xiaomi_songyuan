@@ -1,0 +1,139 @@
+{
+    "RF_REDUCE_POWER_RULE_CONFIG" : [
+        {
+            "Id": 1,
+            "Name": "MiuiCameraRule",
+            "AppList": ["A_MIUI_Camera"],
+            "OperationMode" : [36864],
+            "FrameworkId": [],
+            "RoleId": [60],
+            "Action": {
+                "ConfigStream":{"RFReduce":"3"}
+            }
+        },
+        {
+            "Id": 2,
+            "Name": "MiuiCameraRule",
+            "AppList": ["A_MIUI_Camera"],
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [60,61,62,63,64,65,66,67,68,69],
+            "Action": {
+                "Open":{"RFReduce":"1"},
+                "Request":{"ZoomRatio":[1.15, 65535.0, 4096.0], "RFReduce":"3"}
+            }
+        },
+        {
+            "Id": 3,
+            "Name": "MiuiCameraRule",
+            "AppList": ["A_MIUI_Camera"],
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [20],
+            "Action": {
+                "Open": {"RFReduce":"3"}
+            }
+        },
+        {
+            "Id": 4,
+            "Name": "MiuiCameraRule",
+            "AppList": ["A_MIUI_Camera"],
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [],
+            "Action": {
+                "Open": {"RFReduce":"1"}
+            }
+        },
+        {
+            "Id": 5,
+            "Name": "3rdWhitelistRule",
+            "ActivityList":["A_3rdWhitectivityList_CN", "B_3rdWhitectivityList_GL"],
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [20,60,61,62,63,64,65,66,67,68,69],
+            "Action": {
+                "Open": {"RFReduce":"0"}
+            }
+        },
+        {
+            "Id": 6,
+            "Name": "3rdScanSceneRule",
+            "ActivityList":["C_3rdScanSceneList"],
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [60,61,62,63,64,65,66,67,68,69],
+            "Action": {
+                "Request":{"ZoomRatio":[2.0, 65535.0, 4096.0], "RFReduce":"1", "MipiErrThreshold":[20, 3, "3"]},
+                "Flush":{"RFReduce":"2"}
+            }
+        },
+        {
+            "Id": 7,
+            "Name": "Other",
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [60,61,62,63,64,65,66,67,68,69],
+            "Action": {
+                "Request":{"ZoomRatio":[2.0, 65535.0, 4096.0],"RFReduce":"1", "MipiErrThreshold":[20, 3, "3"]}
+            }
+        },
+        {
+            "Id": 8,
+            "Name": "Other",
+            "OperationMode" : [],
+            "FrameworkId": [],
+            "RoleId": [20],
+            "Action": {
+                "Open": {"RFReduce":"1", "MipiErrThreshold":[20, 3, "3"]},
+                "Request":{"ZoomRatio":[1.0, 65535.0, 4096.0], "RFReduce":"1", "MipiErrThreshold":[20, 3, "3"]}
+            }
+        },
+        {
+            "Id": 9,
+            "Name": "Other",
+            "Action": {
+                "Default": {"RFReduce":"1"}
+            }
+        }
+    ],
+    "ACTIVITY_LIST" : [
+        {
+            "A_3rdWhitectivityList_CN": ["com.tencent.mm.plugin.profile.ui.ContactInfoUI",
+                                         "com.tencent.mm.plugin.voip.ui.VideoActivity",
+                                         "com.tencent.mm.ui.LauncherUI",
+                                         "com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI",
+                                         "com.tencent.mm.plugin.finder.feed.ui.FinderLiveAnchorWithoutAffinityUI",
+                                         "com.tencent.mm.plugin.finder.feed.ui.FinderLiveAnchorAffinityUI",
+                                         "com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity",
+                                         "com.ss.android.ugc.aweme.live.LiveBroadcastActivity",
+                                         "com.bytedance.android.xr.fusion.XrAvCallActivity",
+                                         "com.ss.android.ugc.aweme.main.MainActivity",
+                                         "com.tencent.av.ui.AVActivity",
+                                         "com.tencent.intervideo.sixgodcontainer.proxyactivitys.PluginDefaultProxyActivity",
+                                         "com.xingin.capa.lib.newcapa.camerahub.CameraHubActivity",
+                                         "com.xingin.alpha.emcee.AlphaEmceeActivity",
+                                         "com.xingin.capa.lib.entrance.CapaEntranceActivity",
+                                         "com.yxcorp.gifshow.camera.record.CameraActivity",
+                                         "com.kuaishou.live.anchor.basic.activity.LivePushActivity",
+                                         "com.kiwi.phoenix.picker.ui.camera.CameraActivity",
+                                         "com.duowan.liveroom.LiveRoomActivity",
+                                         "com.dy.liveV2.living.RecorderCameraActivityV2Portrait",
+                                         "com.sina.weibo.mediaproducer.activity.StoryCameraIndependentActivity",
+                                         "com.sina.weibo.wblive.activity.WBLivePublishActivity",
+                                         "com.yxcorp.gifshow.message.rtc.activity.RtcCallActivity",
+                                         "com.bilibili.studio.centerplus.ui.CenterPlusMainActivity"
+            ],
+            "B_3rdWhitectivityList_GL": ["com.whatsapp.calling.ui.VoipActivityV3",
+                                         "com.zipow.videobox.SimpleActivity",
+                                         "com.zipow.videobox.conference.ui.ZmConfActivity"
+            ],
+            "C_3rdScanSceneList": ["3rdScanScene"]
+        }
+    ],
+    "APP_LIST" : [
+        {
+            "A_MIUI_Camera": ["com.android.camera"]
+        }
+    ]
+}

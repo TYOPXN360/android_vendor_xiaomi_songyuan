@@ -1,0 +1,16 @@
+{
+    "asd": {
+        "framework_info": {
+            "production": "P1"
+        },
+        "model_enable": {
+            "model_init_sync": false,
+            "activate_asd_model": true,
+            "activate_classify_model": true,
+            "activate_multitask_model": false,
+            "activate_indoors_model": false,
+            "activate_concert_model": false,
+            "activate_concert_nobody_model": false
+        }
+    }
+}
