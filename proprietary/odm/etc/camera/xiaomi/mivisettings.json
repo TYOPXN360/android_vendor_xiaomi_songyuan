@@ -1,0 +1,30 @@
+{
+    "offlinedebugmask" : 1,
+    "Soc" : "QCOM",
+    "SupportBinaryLog": true,
+    "SupportMiviD": true,
+    "SupportMiviDCaptureDump": true,
+    "MiviLogGroupsEnable": 49215, //0xc03f
+    "OpenLIFO" : 1,
+    "WatermarkDown": true,
+    "SrNodeHaveTwoOutPort" : false,
+    "NightBokehConcurrencyProcess" : false,
+    "MialgoEnginePreviewThreadNum" : 6,
+    "MialgoEngineCaptureThreadNum" : 12,
+    "AppBugHunterWhiteList": [],
+    "AppBugHunterBlackList": [0, 1023200, 1002300, 1002301, 1001002, 1003903, 1002904, 1002905, 1002906, 1043200],
+    "PickZslFrameFromConsumer": true,
+    "snapDumpDeadline":1768897090,
+    "SupportMetaDone": true,
+    "pipelineProgressMeasure": {
+        "toPostStage" :[
+            "com.xiaomi.plugin.offlinemfnr",
+            "com.xiaomi.plugin.mialgoallinone",
+            "com.xiaomi.plugin.midualcamallinone",
+            "com.xiaomi.plugin.capbokeh",
+            "com.xiaomi.plugin.frontbokeh"
+        ]
+    },
+    "debugMiMetabufferTag": 4294967295, //tagID
+    "debugMiMetabufferTagType": 4294967295 //0:u8 1:i32 2:float 3:i64 4:double 5:r 6:string
+}

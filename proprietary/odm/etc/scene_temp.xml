@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+    <sceneid id="-1">
+        <name>default</name>
+        <temp>48000</temp>
+    </sceneid>
+    <sceneid id="50">
+        <name>per-normal</name>
+    </sceneid>
+    <sceneid id="57">
+        <name>per-class0</name>
+    </sceneid>
+    <sceneid id="61">
+        <name>per-video</name>
+    </sceneid>
+    <sceneid id="11">
+        <name>video</name>
+    </sceneid>
+    <sceneid id="7">
+        <name>class0</name>
+    </sceneid>
+    <sceneid id="19">
+        <name>mgame</name>
+    </sceneid>
+    <sceneid id="18">
+        <name>tgame</name>
+        <temp>51000</temp>
+    </sceneid>
+    <sceneid id="6">
+        <name>nolimits</name>
+        <temp>53000</temp>
+    </sceneid>
+    <sceneid id="9">
+        <name>arvr</name>
+        <temp>53000</temp>
+    </sceneid>
+    <sceneid id="15">
+        <name>camera</name>
+        <temp>55000</temp>
+    </sceneid>
+    <sceneid id="16">
+        <name>4K</name>
+        <temp>55000</temp>
+    </sceneid>
+    <sceneid id="17">
+        <name>4K</name>
+        <temp>55000</temp>
+    </sceneid>
+    <sceneid id="20">
+        <name>yuanshen</name>
+        <temp>51000</temp>
+    </sceneid>
+    <sceneid id="25">
+        <name>xingtie</name>
+        <temp>51000</temp>
+    </sceneid>
+    <ntc name="xo-therm" temp="78000"/>
+    <ntc name="default" temp="95000"/>
+    <ntc name="quiet_therm" temp="70000"/>
+ </scene>

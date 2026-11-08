@@ -1,0 +1,3 @@
+probecount=true
+SENSORI2C=true
+probestate=true

@@ -1,0 +1,112 @@
+
+{
+    "config": {
+      "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+      "soc_id": ["519", "557", "536", "577", "660"]
+    },
+    "sip2326lr1n": {
+      "owner": "sns_sip2326lr1n",
+      ".als": {
+        "owner": "sns_sip2326lr1n",
+        ".config": {
+          "owner": "sns_sip2326lr1n",
+          "is_dri": { "type": "int", "ver": "0","data": "0" },
+          "hw_id": { "type": "int", "ver": "0", "data": "0" },
+          "res_idx": { "type": "int", "ver": "0", "data": "0" },
+          "sync_stream": { "type": "int", "ver": "0", "data": "0" }
+        }
+      }
+    },
+    "sip2326lr1n_platform": {
+      "owner": "sns_sip2326lr1n",
+      ".config": {
+        "owner": "sns_sip2326lr1n",
+        "bus_type": { "type": "int", "ver": "0", "data": "0" },
+        "bus_instance": { "type": "int", "ver": "0", "data": "4" },
+        "qup_type": { "type": "int", "ver": "0", "data": "0" },
+        "qup_instance": { "type": "int", "ver": "0", "data": "0" },
+        "slave_config": { "type": "int", "ver": "0", "data": "89" },
+        "min_bus_speed_khz": { "type": "int", "ver": "1", "data": "400" },
+        "max_bus_speed_khz": { "type": "int", "ver": "1", "data": "400" },
+        "reg_addr_type": { "type": "int", "ver": "0", "data": "0" },
+        "dri_irq_num": { "type": "int", "ver": "0", "data": "217" },
+        "irq_pull_type": { "type": "int", "ver": "0", "data": "3" },
+        "irq_is_chip_pin": { "type": "int", "ver": "0", "data": "1" },
+        "irq_drive_strength": { "type": "int", "ver": "0", "data": "0" },
+        "irq_trigger_type": { "type": "int", "ver": "0", "data": "1" },
+        "num_rail": { "type": "int", "ver": "0", "data": "2" },
+        "rail_on_state": { "type": "int", "ver": "0", "data": "1" },
+        "vdd_rail": { "type": "str", "ver": "0", "data": "L1B_E0" },
+        "vddio_rail": { "type": "str", "ver": "0", "data": "L11B_E0" },
+        "rigid_body_type": { "type": "int", "ver": "0", "data": "0" }
+      },
+      ".channel": {
+        "owner": "sns_sip2326lr1n",
+        ".fac_cal": {
+          "owner": "sns_sip2326lr1n",
+          "data_cch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_rch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_gch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_bch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "classify_ratio": { "type": "flt", "ver": "6", "data": "0.347"},
+          "d65_ah_ratio": { "type": "flt", "ver": "5", "data": "2.250"}
+        }
+      },
+      ".fac_cal_original": {
+        "owner": "sns_sip2326lr1n",
+        ".fac_cal": {
+          "owner": "sns_sip2326lr1n",
+          "data_cch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_rch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_gch": { "type": "flt", "ver": "0", "data": "1.0" },
+          "data_bch": { "type": "flt", "ver": "0", "data": "1.0" }
+        }
+      },
+      ".coefficient": {
+        "owner": "sns_sip2326lr1n",
+        "0": { "type": "flt", "ver": "8", "data": "-1379.994" },
+        "1": { "type": "flt", "ver": "8", "data": "944.865" },
+        "2": { "type": "flt", "ver": "8", "data": "565.993" },
+        "3": { "type": "flt", "ver": "8", "data": "125.610" },
+        "4": { "type": "flt", "ver": "8", "data": "1578.418" },
+        "5": { "type": "flt", "ver": "8", "data": "-173.274" },
+        "6": { "type": "flt", "ver": "8", "data": "1902.133" },
+        "7": { "type": "flt", "ver": "8", "data": "-211.061" },
+        "8": { "type": "flt", "ver": "8", "data": "-8216.405" },
+        "9": { "type": "flt", "ver": "8", "data": "-661.159" },
+        "10": { "type": "flt", "ver": "8", "data": "671.098"},
+        "11": { "type": "flt", "ver": "8", "data": "2519.475"}
+      },
+      ".cct_coef_d65": {
+        "owner": "sns_sip2326lr1n",
+        "0": { "type": "flt", "ver": "8", "data": "-257.792" },
+        "1": { "type": "flt", "ver": "8", "data": "705.178" },
+        "2": { "type": "flt", "ver": "8", "data": "1354.218" },
+        "3": { "type": "flt", "ver": "8", "data": "-52.990" },
+        "4": { "type": "flt", "ver": "8", "data": "-302.799" },
+        "5": { "type": "flt", "ver": "8", "data": "450.813" },
+        "6": { "type": "flt", "ver": "8", "data": "1559.691" },
+        "7": { "type": "flt", "ver": "8", "data": "129.921" },
+        "8": { "type": "flt", "ver": "8", "data": "-509.705" },
+        "9": { "type": "flt", "ver": "8", "data": "-1236.213" },
+        "10": { "type": "flt", "ver": "8", "data": "2745.734"},
+        "11": { "type": "flt", "ver": "8", "data": "1102.579"}
+      },
+      ".cct_coef_ah": {
+        "owner": "sns_sip2326lr1n",
+        "0": { "type": "flt", "ver": "8", "data": "35.605" },
+        "1": { "type": "flt", "ver": "8", "data": "446.510" },
+        "2": { "type": "flt", "ver": "8", "data": "1199.725" },
+        "3": { "type": "flt", "ver": "8", "data": "-661.487" },
+        "4": { "type": "flt", "ver": "8", "data": "23.025" },
+        "5": { "type": "flt", "ver": "8", "data": "-288.205" },
+        "6": { "type": "flt", "ver": "8", "data": "2003.833" },
+        "7": { "type": "flt", "ver": "8", "data": "-660.175" },
+        "8": { "type": "flt", "ver": "8", "data": "-7.323" },
+        "9": { "type": "flt", "ver": "8", "data": "-1245.830" },
+        "10": { "type": "flt", "ver": "8", "data": "2198.156"},
+        "11": { "type": "flt", "ver": "8", "data": "-326.031"}
+      }
+    }
+}
+  

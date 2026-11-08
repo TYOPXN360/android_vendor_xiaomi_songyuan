@@ -1,0 +1,145 @@
+[
+    {
+        "_comment": "Songyuan plugin trim config. operationMode 数值取自 mivifwk-common/api/Common.h 中 MiaStreamConfigMode 枚举"
+    },
+    {
+        "operationMode": "0x8001",
+        "operationModeDesc": "SAT (后置主摄/广角/长焦默认拍照模式)",
+        "nodes": [
+            "com.xiaomi.plugin.arcskinbeautifier",
+            "com.xiaomi.plugin.depurple",
+            "com.xiaomi.plugin.gainmap",
+            "com.xiaomi.plugin.ldc"
+        ]
+    },
+    {
+        "operationMode": "0x8002",
+        "operationModeDesc": "Bokeh (人像;前后置共享此 operationMode,由 cameraMode 区分)",
+        "nodes": [
+            "com.xiaomi.plugin.frontbokeh",
+            "com.xiaomi.plugin.arcskinbeautifier",
+            "com.xiaomi.plugin.capdepth",
+            "com.xiaomi.plugin.capbokeh",
+            "com.xiaomi.plugin.ldc",
+            "com.xiaomi.plugin.depurple",
+            "com.xiaomi.plugin.arcbeautydeformation"
+        ]
+    },
+    {
+        "operationMode": "0x8003",
+        "operationModeDesc": "MiuiManual (专业模式)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x8005",
+        "operationModeDesc": "MiuiZslFront (前置 ZSL)",
+        "nodes": [
+            "com.xiaomi.plugin.arcskinbeautifier"
+        ]
+    },
+    {
+        "operationMode": "0x8006",
+        "operationModeDesc": "MiuiFaceUnlock (前置 FaceUnlock)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x8007",
+        "operationModeDesc": "MiuiQcfaFront (前置高像素)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x8008",
+        "operationModeDesc": "MiuiPanorama (全景)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x800A",
+        "operationModeDesc": "MiuiSuperNight (超夜)",
+        "nodes": [
+            "com.xiaomi.plugin.arcskinbeautifier"
+        ]
+    },
+    {
+        "operationMode": "0x80F1",
+        "operationModeDesc": "FrontBokeh (前置单摄人像)",
+        "nodes": [
+            "com.xiaomi.plugin.frontbokeh",
+            "com.xiaomi.plugin.arcskinbeautifier"
+        ]
+    },
+    {
+        "operationMode": "0x80F3",
+        "operationModeDesc": "UltraPixelPhotography (UltraPixel)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9000",
+        "operationModeDesc": "AlgoUpDualBokeh (AlgoUp 双摄人像)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9004",
+        "operationModeDesc": "AlgoQcfaMfnr (高像素 MFNR / SR)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9005",
+        "operationModeDesc": "AlgoNormal (AlgoUp 普通拍照)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9007",
+        "operationModeDesc": "AlgoManualSuperHD (SE / 超清)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9008",
+        "operationModeDesc": "AlgoManual (App 手动相机)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x900A",
+        "operationModeDesc": "CosmeticMirror (化妆镜)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x900B",
+        "operationModeDesc": "AlgoUltraRaw (UltraRaw)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x900C",
+        "operationModeDesc": "AlgoManualHdUltraRaw (50M UltraRaw)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x900D",
+        "operationModeDesc": "AlgoManualRaw (Manual Raw)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x900E",
+        "operationModeDesc": "AlgoManualHdRaw (Manual 50M Raw)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9011",
+        "operationModeDesc": "ThirdCameraBeauty (第三方相机美颜,微信等)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0x9300",
+        "operationModeDesc": "AmbiLight (长曝光)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0xEF00",
+        "operationModeDesc": "MiuiCameraJpeg (Jpeg 编码后处理)",
+        "nodes": []
+    },
+    {
+        "operationMode": "0xEF01",
+        "operationModeDesc": "MiuiCameraHeic (Heic 编码后处理)",
+        "nodes": []
+    }
+]

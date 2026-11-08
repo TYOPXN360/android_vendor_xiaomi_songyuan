@@ -1,0 +1,232 @@
+{
+  "PipelineName": "FrontMagicWandVideowithEisV2",
+  "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.arcskinbeautifierpreview",
+            "NodeInstance": "SkinBeautifierInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.arcsoftvideobokeh",
+            "NodeInstance": "VideoBokehInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.videofilter",
+            "NodeInstance": "VideoFilterInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.movieeffect",
+            "NodeInstance": "MovieEffectInstance0",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 1
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.psmetasplit",
+            "NodeInstance": "previewPsMetaSplitInstance",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 1
+                },
+                {
+                    "NodePropertyName": "pluginMode",
+                    "NodePropertyValue": 1
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.asd",
+            "NodeInstance": "AsdAsyncInstance",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 1
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.misv2",
+            "NodeInstance": "HISv2Instance",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 1
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineyuvwarp",
+            "NodeInstance": "previewWarpInstance",
+            "NodeProperty": [
+                {
+                    "NodePropertyName": "NodeMask",
+                    "NodePropertyValue": 132
+                }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.swflip",
+            "NodeInstance": "SwflipInstance"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlineyuvsplit",
+            "NodeInstance": "Y2YSplitWithEisV2",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":4
+              }
+            ]
+        },
+        {
+            "NodeName": "",
+            "NodeInstance": "virtualSinkbuffer1",
+            "NodeProperty":[
+                {
+                     "NodePropertyName":"NodeMask",
+                     "NodePropertyValue":1536
+                }
+            ]
+        }
+      ]
+  },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewPsMetaSplitInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewPsMetaSplitInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv2Instance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HISv2Instance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewWarpInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "previewWarpInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "BufferType": "Gralloc"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "BufferType": "Gralloc"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VideoBokehInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VideoBokehInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VideoFilterInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "previewWarpInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AsdAsyncInstance",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "VideoFilterInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Y2YSplitWithEisV2"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Y2YSplitWithEisV2",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "Y2YSplitWithEisV2",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SinkBuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "Y2YSplitWithEisV2"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "virtualSinkbuffer1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "virtualSinkbuffer1"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MovieEffectInstance0"
+                }
+            }
+        ]
+    }
+}

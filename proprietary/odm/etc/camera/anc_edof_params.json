@@ -1,0 +1,31 @@
+{
+    "EDOF": {
+        "WIDE": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100
+            },
+            "PROFILE_1": {
+                "EDOF_LIGHT_THRESHOLD": 300,
+                "EDOF_CAMERA_EFL": 0.00584,
+                "EDOF_CAMERA_FNO": 1.68,
+                "EDOF_CAMERA_PIXEL_SIZE": 5e-07,
+                "EDOF_EFFECT_DIS_MAX": 0.5,
+                "EDOF_EFFECT_DIS_MIN": 0.1
+            }
+        },
+        "TELE_2": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100
+            },
+            "PROFILE_1": {
+                "EDOF_CAMERA_EFL": 0.017267,
+                "EDOF_CAMERA_FNO": 3.0,
+                "EDOF_CAMERA_PIXEL_SIZE": 6.4e-07,
+                "EDOF_EFFECT_DIS_MAX": 0.5,
+                "EDOF_EFFECT_DIS_MIN": 0.305,
+                "EDOF_LIGHT_THRESHOLD": 300000000.0,
+                "NEED_SWAP_FV": 0
+            }
+        }
+    }
+}

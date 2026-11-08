@@ -1,0 +1,621 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["660"]
+  },
+  "glsx":{
+    "owner": "sns_glsx",
+    ".als":{
+      "owner": "sns_glsx",
+      ".config":{
+        "owner": "sns_glsx",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "glsx_platform":{
+    "owner": "sns_glsx",
+    ".config":{
+      "owner": "sns_glsx",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "49"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "2",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "2",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "151"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "1",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "L1B_E0"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "L8B_E0"
+      },
+      "clk_in_rail":{ "type": "str", "ver": "0",
+        "data": "L11B_E0"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_glsx",
+      ".dark_cal":{
+        "owner": "sns_glsx",
+        "ch_r":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_g":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_b":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_c":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_w":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_r_blk":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_g_blk":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_b_blk":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_c_blk":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "ch_w_blk":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".als_delay":{
+        "owner": "sns_glsx",
+        "als_sync_delay_30hz":{ "type": "flt", "ver": "0",
+          "data": "300"
+        },
+        "als_sync_delay_60hz":{ "type": "flt", "ver": "0",
+          "data": "300"
+        },
+        "als_sync_delay_90hz":{ "type": "flt", "ver": "0",
+          "data": "300"
+        },
+        "als_sync_delay_120hz":{ "type": "flt", "ver": "0",
+          "data": "300"
+        },
+        "als_sync_delay_144hz":{ "type": "flt", "ver": "0",
+          "data": "200"
+        },
+        "als_sync_delay_165hz":{ "type": "flt", "ver": "0",
+          "data": "240"
+        },
+        "als_sync_delay_185hz":{ "type": "flt", "ver": "0",
+          "data": "240"
+        },
+        "delay8":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "delay9":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "delay_delta":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".ch_fac_cal":{
+        "owner": "sns_glsx",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1"
+        }
+      },
+      ".ch_fac_cal_original":{
+        "owner": "sns_glsx",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1"
+        }
+      },
+      ".lux_coef":{
+        "owner": "sns_glsx",
+        "Thre_1":{ "type": "flt", "ver": "7",
+          "data": "0.7"
+        },
+        "Thre_2":{ "type": "flt", "ver": "7",
+          "data": "0.7"
+        },
+        "lowAlsGThre":{ "type": "flt", "ver": "7",
+          "data": "48.0"
+        },
+        "lowAlsCoef":{ "type": "flt", "ver": "7",
+          "data": "0.315"
+        },
+        "alsTranma1_0":{ "type": "flt", "ver": "7",
+          "data": "0.031450781"
+        },
+        "alsTranma1_1":{ "type": "flt", "ver": "7",
+          "data": "0.247568915"
+        },
+        "alsTranma1_2":{ "type": "flt", "ver": "7",
+          "data": "-0.055566377"
+        },
+        "alsTranma1_3":{ "type": "flt", "ver": "7",
+          "data": "0.049383464"
+        },
+        "alsTranma1_4":{ "type": "flt", "ver": "7",
+          "data": "-0.023455023"
+        },
+        "alsTranma2_0":{ "type": "flt", "ver": "7",
+          "data": "0.031450781"
+        },
+        "alsTranma2_1":{ "type": "flt", "ver": "7",
+          "data": "0.247568915"
+        },
+        "alsTranma2_2":{ "type": "flt", "ver": "7",
+          "data": "-0.055566377"
+        },
+        "alsTranma2_3":{ "type": "flt", "ver": "7",
+          "data": "0.049383464"
+        },
+        "alsTranma2_4":{ "type": "flt", "ver": "7",
+          "data": "-0.023455023"
+        },
+        "alsTranma3_0":{ "type": "flt", "ver": "7",
+          "data": "0.037251597"
+        },
+        "alsTranma3_1":{ "type": "flt", "ver": "7",
+          "data": "0.094166824"
+        },
+        "alsTranma3_2":{ "type": "flt", "ver": "7",
+          "data": "0.186183567"
+        },
+        "alsTranma3_3":{ "type": "flt", "ver": "7",
+          "data": "0.054879428"
+        },
+        "alsTranma3_4":{ "type": "flt", "ver": "7",
+          "data": "-0.012311596"
+        }
+      },
+      ".cct_coef":{
+        "owner": "sns_glsx",
+        "low_0_0":{ "type": "flt", "ver": "7",
+          "data": "0.118217584"
+        },
+        "low_0_1":{ "type": "flt", "ver": "7",
+          "data": "0.349487542"
+        },
+        "low_0_2":{ "type": "flt", "ver": "7",
+          "data": "-0.109564192"
+        },
+        "low_0_3":{ "type": "flt", "ver": "7",
+          "data": "0.030575174"
+        },
+        "low_0_4":{ "type": "flt", "ver": "7",
+          "data": "-0.067290831"
+        },
+        "low_1_0":{ "type": "flt", "ver": "7",
+          "data": "0.011720524"
+        },
+        "low_1_1":{ "type": "flt", "ver": "7",
+          "data": "0.301143604"
+        },
+        "low_1_2":{ "type": "flt", "ver": "7",
+          "data": "-0.033998918"
+        },
+        "low_1_3":{ "type": "flt", "ver": "7",
+          "data": "0.060992296"
+        },
+        "low_1_4":{ "type": "flt", "ver": "7",
+          "data": "-0.037385581"
+        },
+        "low_2_0":{ "type": "flt", "ver": "7",
+          "data": "-0.087342316"
+        },
+        "low_2_1":{ "type": "flt", "ver": "7",
+          "data": "0.219713741"
+        },
+        "low_2_2":{ "type": "flt", "ver": "7",
+          "data": "0.730675831"
+        },
+        "low_2_3":{ "type": "flt", "ver": "7",
+          "data": "0.018404155"
+        },
+        "low_2_4":{ "type": "flt", "ver": "7",
+          "data": "-0.065902682"
+        },
+        "high_0_0":{ "type": "flt", "ver": "7",
+          "data": "0.050935078"
+        },
+        "high_0_1":{ "type": "flt", "ver": "7",
+          "data": "0.086159596"
+        },
+        "high_0_2":{ "type": "flt", "ver": "7",
+          "data": "0.123906608"
+        },
+        "high_0_3":{ "type": "flt", "ver": "7",
+          "data": "0.04935775"
+        },
+        "high_0_4":{ "type": "flt", "ver": "7",
+          "data": "-0.007653282"
+        },
+        "high_1_0":{ "type": "flt", "ver": "7",
+          "data": "0.034589458"
+        },
+        "high_1_1":{ "type": "flt", "ver": "7",
+          "data": "0.109139351"
+        },
+        "high_1_2":{ "type": "flt", "ver": "7",
+          "data": "0.176864251"
+        },
+        "high_1_3":{ "type": "flt", "ver": "7",
+          "data": "0.050585565"
+        },
+        "high_1_4":{ "type": "flt", "ver": "7",
+          "data": "-0.011633096"
+        },
+        "high_2_0":{ "type": "flt", "ver": "7",
+          "data": "-0.113795665"
+        },
+        "high_2_1":{ "type": "flt", "ver": "7",
+          "data": "0.147234804"
+        },
+        "high_2_2":{ "type": "flt", "ver": "7",
+          "data": "0.650701711"
+        },
+        "high_2_3":{ "type": "flt", "ver": "7",
+          "data": "0.029818699"
+        },
+        "high_2_4":{ "type": "flt", "ver": "7",
+          "data": "-0.01500903"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_glsx",
+      ".fac_cal":{
+        "owner": "sns_glsx",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "1450"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "950"
+        },
+        "crosstalk":{ "type": "flt", "ver": "0",
+          "data": "800"
+        }
+      },
+      ".fac_cal_original":{
+        "owner": "sns_glsx",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "1450"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "950"
+        },
+        "crosstalk":{ "type": "flt", "ver": "0",
+          "data": "800"
+        }
+      },
+      ".def_config":{
+        "owner": "sns_glsx",
+        "pulse_num":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "pulse_len":{ "type": "int", "ver": "2",
+          "data": "64"
+        },
+        "ldr_isink0":{ "type": "int", "ver": "2",
+          "data": "16"
+        },
+        "ldr_isink1":{ "type": "int", "ver": "2",
+          "data": "16"
+        },
+        "prx_indoor_gain":{ "type": "int", "ver": "0",
+          "data": "16"
+        },
+        "prx_indoor_sat_l":{ "type": "int", "ver": "1",
+          "data": "1000"
+        },
+        "prx_indoor_sat_h":{ "type": "int", "ver": "0",
+          "data": "80000"
+        },
+        "prx_outdoor_gain":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "prx_outdoor_sat_l":{ "type": "int", "ver": "0",
+          "data": "8000"
+        },
+        "prx_outdoor_sat_h":{ "type": "int", "ver": "0",
+          "data": "80000"
+        },
+        "prx_sync_delay":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_1hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_10hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_20hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_24hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_30hz":{ "type": "int", "ver": "4",
+          "data": "2500"
+        },
+        "prx_sync_delay_60hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_90hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_120hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_144hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_sync_delay_185hz":{ "type": "int", "ver": "3",
+          "data": "0"
+        },
+        "prx_highlight_near_ratio_k":{ "type": "int", "ver": "0",
+          "data": "3000"
+        },
+        "prx_highlight_far_ratio_k":{ "type": "int", "ver": "0",
+          "data": "3000"
+        }
+      },
+      ".def_config_1":{
+        "owner": "sns_glsx",
+        "pulse_num":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "pulse_len":{ "type": "int", "ver": "0",
+          "data": "64"
+        },
+        "ldr_isink0":{ "type": "int", "ver": "0",
+          "data": "28"
+        },
+        "ldr_isink1":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_indoor_gain":{ "type": "int", "ver": "0",
+          "data": "16"
+        },
+        "prx_indoor_sat_l":{ "type": "int", "ver": "0",
+          "data": "8000"
+        },
+        "prx_indoor_sat_h":{ "type": "int", "ver": "0",
+          "data": "80000"
+        },
+        "prx_outdoor_gain":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "prx_outdoor_sat_l":{ "type": "int", "ver": "0",
+          "data": "8000"
+        },
+        "prx_outdoor_sat_h":{ "type": "int", "ver": "0",
+          "data": "80000"
+        },
+        "prx_sync_delay":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_1hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_10hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_20hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_24hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_30hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_60hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_90hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_120hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_144hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_sync_delay_185hz":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "prx_highlight_near_ratio_k":{ "type": "int", "ver": "0",
+          "data": "3000"
+        },
+        "prx_highlight_far_ratio_k":{ "type": "int", "ver": "0",
+          "data": "3000"
+        }
+      },
+      ".temp_cali_coef":{
+        "owner": "sns_glsx",
+        "enable":{ "type": "flt", "ver": "0",
+          "data": "10"
+        },
+        "T0":{ "type": "flt", "ver": "2",
+          "data": "30"
+        },
+        "K_H":{ "type": "flt", "ver": "2",
+          "data": "0.00519"
+        },
+        "K_L":{ "type": "flt", "ver": "2",
+          "data": "0.00193"
+        }
+      }
+    },
+    ".misc_info":{
+      "owner": "sns_glsx",
+      "reserved0":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved1":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved2":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved3":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved4":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved5":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved6":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved7":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved8":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved9":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved10":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved11":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved12":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved13":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved14":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved15":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved16":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved17":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved18":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved19":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved20":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved21":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved22":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "reserved23":{ "type": "flt", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".sensor_reg_patch": {
+      "owner": "sns_glsx",
+      ".patches": {
+        "owner": "sns_glsx",
+        "reg_patch1": { "type": "str", "ver": "2",
+          "data": ""
+        },
+        "reg_patch2": { "type": "str", "ver": "0",
+          "data": ""
+        },
+        "reg_patch3": { "type": "str", "ver": "0",
+          "data": ""
+        },
+        "reg_patch4": { "type": "str", "ver": "0",
+          "data": ""
+        }
+      }
+    }
+  }
+}

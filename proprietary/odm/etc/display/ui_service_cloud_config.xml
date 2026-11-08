@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<common-cloud-config>
+    <cloud-control>
+        <cloud-data-item moduleBeanPath="com.android.server.ui.utils.WhitePackageInfo"
+            moduleName="dbi" moduleString='{
+                "mWhitePackageList":
+                [
+                    "dbiMode:1#cwbMode:6",
+                    "dbiMode:1#cwbMode:5"
+                ],
+                "mVersion":"20260421"
+                }' moduleVersion="20260421" />
+
+        <cloud-data-item moduleBeanPath="com.android.server.ui.utils.WhitePackageInfo"
+            moduleName="cloudgame" moduleString='{
+                "mWhitePackageList":
+                [
+                    "com.cloudgame.plugin.mi#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.netease.android.cloudgame#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.miHoYo.cloudgames.ys#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.miHoYo.cloudgames.hkrpg#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.limelight#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.limelight.noir#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.valvesoftware.steamlink#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.playstation.remoteplay#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.microsoft.xboxone.smartglass#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.xiaoji.egggame#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.xiaoji.emulator#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.xiaoji.emulator64#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1",
+                    "com.kuro.cloudgame#LDSR:1,LDSRMode:1,LDSRV2Mode:0x22,Sharpness:1,SharpnessMode:1"
+                ],
+                "mVersion":"20260421"
+                }' moduleVersion="20260421" />
+
+        <cloud-data-item moduleBeanPath="com.android.server.ui.utils.WhitePackageInfo"
+            moduleName="dualdpu" moduleString='{
+                "mWhitePackageList":
+                [
+                    "com.qiyi.video/org.iqiyi.video.activity.PlayerActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x616,3DLUT:1,3DLUTMode:6",
+                    "com.qiyi.video/org.qiyi.pluginlibrary.component.InstrActivityProxy1#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x616,3DLUT:1,3DLUTMode:6",
+                    "com.youku.phone/com.youku.ui.activity.DetailActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.tencent.qqlive/com.tencent.qqlive.ona.activity.VideoDetailActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/tv.danmaku.bili.ui.video.VideoDetailsActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/com.bilibili.video.videodetail.VideoDetailsActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/com.bilibili.bangumi.ui.page.detail.BangumiDetailActivityV3#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/com.bilibili.video.story.StoryVideoActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.ss.android.article.video/com.ss.android.article.video.activity.SplashActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.ss.android.article.video/com.ixigua.feature.longvideo.detail.LongDetailActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.pps.mobile/org.isuike.video.activity.PlayerActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x616,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/com.bilibili.ship.theseus.all.UnitedBizDetailsActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "tv.danmaku.bili/com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:1,LDSRV2Mode:0x12,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.ss.android.article.video/com.ixigua.feature.detail.activity.NewDetailActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.tencent.qqlive/com.tencent.qqlive.ona.activity.LocalVideoPlayerActivity#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.tencent.qqlive/com.tencent.qqlive.kmm.VideoDetailKmmActivityBk#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6",
+                    "com.ss.android.article.video/com.ixigua.feature.longvideo.detail.LongDetailActivityTransparent#Category:1,MEMC:1,MEMCMode:2,TargetFPS:60,LDSR:1,LDSRMode:3,LDSRV2Mode:0x22,SDR2HDR:1,SDR2HDRMode:0x636,3DLUT:1,3DLUTMode:6"
+                ],
+                "mVersion":"20260421"
+                }' moduleVersion="20260421" />
+
+        <cloud-data-item moduleBeanPath="com.android.server.ui.utils.WhitePackageInfo"
+            moduleName="gamehdr" moduleString='{
+                "mWhitePackageList":
+                [
+                    "switch on",
+                    "com.tencent.tmgp.sgame#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x434#2.0#QualityPriority",
+                    "com.tencent.tmgp.pubgmhd#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x335#2.0#QualityPriority",
+                    "com.tencent.jkchess#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.KiHan#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.Nap#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.miHoYo.Nap.bilibili#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.tencent.tmgp.cf#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.dnf#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.hkrpg#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.miHoYo.hkrpg.bilibili#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.tencent.lolm#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.mf.uam#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.Yuanshen#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.miHoYo.ys.mi#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.miHoYo.ys.bilibili#LightPlus:1,LightPlusMode:0x2000,SDR2HDR:1,SDR2HDRMode:0x535#2.0#QualityPriority",
+                    "com.happyelements.AndroidAnimal#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.nfsonline#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.supercell.clashofclans#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.party.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.apps.valorant#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.cod#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.kurogame.mingchao#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.speedmobile#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.hypergryph.arknights#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.hypergryph.arknights.bilibili#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.dwrg.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.mc.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.dwrg#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.nshm#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.ig#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.letsgo#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.yhtj#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.supercell.brawlstars#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.dfjs.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.sky.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.bilibili.azurlane#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.supercell.clashroyale#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.yhtj.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.kiloo.subwaysurf#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.party#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.supercell.boombeach#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.xuejing.smallfish.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.sky#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.ztgame.bob#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.race#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.bilibili.fatego#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.shenlan.m.reverse1999#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.stzb.netease#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.bilibili.nslg#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.meta.box#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.djsy#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.sofunny.Sausage#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.minitech.miniworld.TMobile.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.onmyoji#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.knight.union.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.aceracer.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.enterprise.NGHSoD#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.bh3.bilibili#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.miHoYo.bh3.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.xuejing.smallfish.official#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.kurogame.haru.hero#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.pes.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.t2ksports.nba2k20and#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.seasun.jx3#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.sjzw#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.fifamobile#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.nshm.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.gnyx#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.dfm#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.codev#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.yyslscn#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.pi.czrxdfirst#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.qqgame.hlddz#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.l22#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.l22.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.blizzard.wtcg.hearthstone#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.hermes.blade.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.blade.bd#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "cn.jj#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.bf.sgs.hdexp.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.bf.sgs.hdexp#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.qqgame.xq#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.x19#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.hhw#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.popcap.pvz2cthdxm#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.nba2kx#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.wepie.weplay#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.papegames.lysk.cn#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.mhxyhtb#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.qqgame.happymj#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.papegames.infinitynikki#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.my#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.feiyu.luobo4.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.nikke#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.gof.china#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.sgamece#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.leiting.zjcs#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.ztgame.bob.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.mrzh#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.ChillyRoom.DungeonShooter#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.g67#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.tmgp.lv#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.leiting.xian#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.lglr#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.taomee.seer.mobile#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.tencent.peng#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.dragonli.projectsnow.lhm#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.hermes.h1game.mi#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.netease.dwrg.huawei#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.PigeonGames.Phigros#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5",
+                    "com.xd.xdt#LightPlus:1,LightPlusMode:0x1500,SDR2HDR:1,SDR2HDRMode:0x535#1.5"
+                ],
+                "mVersion":"20260421"
+                }' moduleVersion="20260421" />
+        <cloud-data-item moduleBeanPath="com.android.server.ui.utils.WhitePackageInfo"
+            moduleName="ticket_grab" moduleString='{
+                "mWhitePackageList":
+                [
+                    "switch on"
+                ],
+                "mVersion":"20260119"
+                }' moduleVersion="20260119" />
+    </cloud-control>
+</common-cloud-config>
