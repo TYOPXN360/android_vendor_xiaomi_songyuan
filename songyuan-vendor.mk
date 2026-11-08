@@ -1670,7 +1670,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.xiaomi.hardware.aidl.intentaware-V1-impl \
     vendor.xiaomi.hardware.aidlbgservice-V1-impl \
+    vendor.xiaomi.hardware.aidlbgservice-V1-ndk_odm \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
+    vendor.xiaomi.hardware.bgservice@1.0_odm \
     vendor.xiaomi.hardware.camera.mivimessage-V1-impl \
     vendor.xiaomi.hardware.camera.mivimessage-V1-ndk \
     vendor.xiaomi.hardware.postprocservice-V1-impl \
