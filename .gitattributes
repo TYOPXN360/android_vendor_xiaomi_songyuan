@@ -1,0 +1,10 @@
+# These seven blobs are past GitHub's 100 MB object limit and have to go
+# through Git LFS. Everything below 100 MB, including the 50-80 MB ArcSoft
+# libraries, stays a regular blob.
+proprietary/odm/etc/camera/anc_sdsr_model filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/etc/camera/sd_unet.minn filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/etc/camera/aisn.bin filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/lib64/libarcsoft_raw_sr.so filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/lib64/libarcsoft_dualcam_bokeh_image.so filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/lib64/libarcsoft_turbo_hdr_raw.so filter=lfs diff=lfs merge=lfs -text
+proprietary/odm/lib64/libarcsoft_pristine_resolution.so filter=lfs diff=lfs merge=lfs -text
