@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Calib_Data>
+  <module name="version">
+    <version>20241216</version>
+  </module>
+  <module name="ic0" id="0x20C0A000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  <module name="ic1" id="0x20C0A000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  <module name="ic2" id="0x22C0E000">
+    <!--Load Table-->
+    <enLoadtable name="pmode.bin">1</enLoadtable>
+  </module>
+  <module name="ic3" id="0x21C0E000">
+    <!--Load Table-->
+    <enLoadtable name="qmode.bin">1</enLoadtable>
+  </module>
+  <module name="ic4" id="0x20C0A000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  <module name="spi" id="0x20C0A000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  <module name="Abnormal" id="0x20C0A000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  <module name="ddic_check" id="0x12C0C000">
+    <!--Load Table-->
+    <enLoadtable>0</enLoadtable>
+  </module>
+  
+</Calib_Data>

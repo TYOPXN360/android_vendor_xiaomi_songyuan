@@ -510,6 +510,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/MiSans-Regular.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSans-Regular.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/MiSansArabicVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansArabicVF.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/MiSansTibetanVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansTibetanVF.ttf \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/MiSansVF.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/MiSansVF.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/Noto-COLRv1-emojicompat.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Noto-COLRv1-emojicompat.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/Oxanium-Medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/Oxanium-Medium.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/ic_cv_film_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_cv_film_logo.png \
@@ -613,6 +614,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_wuhan.webp \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/noise_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/noise_logo.png \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_bold.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_bold.ttf \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_medium.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_medium.ttf \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomi/watermark/oxanium_regular.ttf:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/oxanium_regular.ttf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xiaomismartaeconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomismartaeconfig.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/camera/xmdevcamrfcfg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xmdevcamrfcfg.json \
@@ -702,12 +706,33 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/display/ui_service_cloud_config.xml:$(TARGET_COPY_OUT_ODM)/etc/display/ui_service_cloud_config.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/ASICPCC.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICPCC.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/ASICPanel.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICPanel.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/ASICScene.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICScene.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/ICSelfCheckItem.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ICSelfCheckItem.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/NvtFactoryTest.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/NvtFactoryTest.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/TouchGameInfo.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/TouchGameInfo.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/TouchGameInfo_1472x3200.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/TouchGameInfo_1472x3200.xml \
     vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/TouchGameInfo_1478x3200.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/TouchGameInfo_1478x3200.xml \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/parameter_config.ini:$(TARGET_COPY_OUT_ODM)/etc/dqe/parameter_config.ini \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/video_parameter_config.ini:$(TARGET_COPY_OUT_ODM)/etc/dqe/video_parameter_config.ini \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/dqe/whitelist_app.json:$(TARGET_COPY_OUT_ODM)/etc/dqe/whitelist_app.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dvs-aidl-service.rc \
     vendor/xiaomi/songyuan/proprietary/odm/etc/init/init.boled.lightsensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.boled.lightsensor.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/miaon_frame.rc:$(TARGET_COPY_OUT_ODM)/etc/init/miaon_frame.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/misensor_camera.rc:$(TARGET_COPY_OUT_ODM)/etc/init/misensor_camera.rc \
     vendor/xiaomi/songyuan/proprietary/odm/etc/init/nfc-service-st.rc:$(TARGET_COPY_OUT_ODM)/etc/init/nfc-service-st.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/vendor.novatek.hardware.visdisplaysrv-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.novatek.hardware.visdisplaysrv-service.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/vendor.xiaomi.hardware.authsecretd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.authsecretd.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/vendor.xiaomi.hardware.seaaudio.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.seaaudio.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/app/com.android.camera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/app/com.android.camera.xml.enc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/qcom/sm8850/app/com.android.camera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/qcom/sm8850/app/com.android.camera.xml.enc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/qcom/sm8850/songyuan/app/com.android.camera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/qcom/sm8850/songyuan/app/com.android.camera.xml.enc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/qcom/sm8850/songyuan/app/com.campmobile.snowcamera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/qcom/sm8850/songyuan/app/com.campmobile.snowcamera.xml.enc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/qcom/sm8850/songyuan/app/com.meitu.meiyancamera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/qcom/sm8850/songyuan/app/com.meitu.meiyancamera.xml.enc \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/intent_policy/qcom/sm8850/songyuan/app/com.xhey.xcamera.xml.enc:$(TARGET_COPY_OUT_ODM)/etc/intent_policy/qcom/sm8850/songyuan/app/com.xhey.xcamera.xml.enc \
     vendor/xiaomi/songyuan/proprietary/odm/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/xiaomi/songyuan/proprietary/odm/etc/mdss_dsi_songyuan_42_0d_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_songyuan_42_0d_0a_dsc_cmd_mi.xml \
@@ -735,6 +760,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_aon_front_a_1.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_front_a_1.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_aon_rear_a_2.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_aon_rear_a_2.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_common.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_common_sm8845.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_common_sm8845.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_imx688_6.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_ov32c4c_4.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_ov32c4c_4.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_s5kjn5_3.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_s5kjn5_3.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/sm8850_ak7323.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8850_ak7323.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/sm8850_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8850_ak991x_0.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/sensors/config/sm8850_default_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sm8850_default_sensors.json \
@@ -834,6 +866,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/touch/gameturbotool-control.json:$(TARGET_COPY_OUT_ODM)/etc/touch/gameturbotool-control.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/touch/gameturbotool-fastinput.json:$(TARGET_COPY_OUT_ODM)/etc/touch/gameturbotool-fastinput.json \
     vendor/xiaomi/songyuan/proprietary/odm/etc/touch/gameturbotool.json:$(TARGET_COPY_OUT_ODM)/etc/touch/gameturbotool.json \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/video_thumbnail_lut.png:$(TARGET_COPY_OUT_ODM)/etc/video_thumbnail_lut.png \
+    vendor/xiaomi/songyuan/proprietary/odm/firmware/217_CameraShutter_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/217_CameraShutter_P_RTP.bin \
+    vendor/xiaomi/songyuan/proprietary/odm/firmware/86_lockscreenCameraEntry_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/86_lockscreenCameraEntry_P_RTP.bin \
     vendor/xiaomi/songyuan/proprietary/odm/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest.ini \
     vendor/xiaomi/songyuan/proprietary/odm/firmware/asic_panel.bin:$(TARGET_COPY_OUT_ODM)/firmware/asic_panel.bin \
     vendor/xiaomi/songyuan/proprietary/odm/firmware/asic_pcc.bin:$(TARGET_COPY_OUT_ODM)/firmware/asic_pcc.bin \
@@ -1000,13 +1035,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta \
     vendor/xiaomi/songyuan/proprietary/odm/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/etc/dolby_vision.cfg \
     vendor/xiaomi/songyuan/proprietary/odm/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/persist/display/dolby_vision.cfg \
+    vendor/xiaomi/songyuan/proprietary/product/etc/device_features/songyuan.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/songyuan.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/bin/vendor.qti.qtvm.proxyclient-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qtvm.proxyclient-service \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/audio/sku_canoe/mcs_defs_canoe_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mcs_defs_canoe_mtp.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_mtp.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/audio/sku_canoe/resourcemanager_canoe_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/resourcemanager_canoe_mtp.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/avf/early_vms_oem_vm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/avf/early_vms_oem_vm.xml \
+    vendor/xiaomi/songyuan/proprietary/vendor/etc/bpf/cameraBpfGpl.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/cameraBpfGpl.o \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
+    vendor/xiaomi/songyuan/proprietary/vendor/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/init/avf_qcvm_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/avf_qcvm_manager.rc \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/init/vendor.qti.qtvm.proxyclient-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qtvm.proxyclient-service.rc \
@@ -1084,6 +1122,7 @@ PRODUCT_PACKAGES += \
     libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
+    vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk \
     vendor.xiaomi.hardware.aidl.intentaware-V1-ndk \
     vendor.xiaomi.hardware.aon-V1-ndk \
     vendor.xiaomi.hardware.aon.auth-V1-ndk \
@@ -1092,6 +1131,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.camera.injection-service \
     vendor.xiaomi.hardware.camera.synthetic-V1-ndk \
     vendor.xiaomi.hardware.camera.synthetic-impl \
+    vendor.xiaomi.hardware.oldcredential-V1-ndk \
     vendor.xiaomi.sensor.aonframe-V1-ndk \
     vendor.xiaomi.sensor.camera-V1-ndk \
     vendor_lib_rfsa_adsp_chre_qsh_shim_so \
@@ -1283,6 +1323,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.swjpegencode \
     com.xiaomi.plugin.videofilter \
     com.xiaomi.plugin.watermark \
+    com.xiaomi.plugin.watermarkV2 \
     com.xiaomi.plugin.yuv2Heic \
     com.xiaomi.plugin.yuvresize \
     com.xiaomi.plugin.asd \
@@ -1630,6 +1671,7 @@ PRODUCT_PACKAGES += \
     liboischannel \
     libopencv \
     libopencv3a \
+    libpendant_wrapper \
     libportrait_repair_qnn \
     libpostprocinfo \
     libqfdadapter \
@@ -1665,6 +1707,7 @@ PRODUCT_PACKAGES += \
     libffthelper_skel \
     libhdr_skel \
     libqsegnetengine_dsp_skel \
+    vendor.hardware.vibratorCL.impl \
     vendor.novatek.hardware.visdisplaysrv-V1-ndk \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
@@ -1675,13 +1718,17 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.bgservice@1.0_odm \
     vendor.xiaomi.hardware.camera.mivimessage-V1-impl \
     vendor.xiaomi.hardware.camera.mivimessage-V1-ndk \
+    vendor.xiaomi.hardware.miauthsecretd-V1-ndk \
     vendor.xiaomi.hardware.postprocservice-V1-impl \
     vendor.xiaomi.hardware.postprocservice-V1-ndk \
+    vendor.xiaomi.hardware.seaaudio-V1-ndk \
     odm_lib_rfsa_adsp_libCalculator_skel_so \
     odm_lib_rfsa_adsp_libQnnHexagonSkel_dspApp_so \
     odm_lib_rfsa_adsp_libQnnHtpV81_so \
+    odm_lib_rfsa_adsp_libQnnHtpV81Skel_so \
     odm_lib_rfsa_adsp_libQnnNetRunDirectV81Skel_so \
     odm_lib_rfsa_adsp_libQnnSaver_so \
+    odm_lib_rfsa_adsp_libQnnSystem_so \
     odm_lib_rfsa_adsp_libSnpeHtpV81Skel_so \
     odm_lib_rfsa_adsp_libadsp_jpege_skel_so \
     odm_lib_rfsa_adsp_libaisupernight_ellc_cdsp_skel_so \
@@ -1701,13 +1748,38 @@ PRODUCT_PACKAGES += \
     xiaomi-modem-common \
     avf_qcvm_manager.xml \
     android.hardware.biometrics.face-v4.xml \
+    dvs-aidl-service.xml \
+    miaon_frame.xml \
+    vendor.novatek.hardware.visdisplaysrv.xml \
     vendor.xiaomi.hardware.aon.auth.xml \
+    vendor.xiaomi.hardware.miauthsecretd.xml \
+    vendor.xiaomi.hardware.seaaudio.xml \
+    vendor.xiaomi.hardware.vibratorfeature.service.xml \
     avf_qcvm_manager \
+    vendor.xiaomi.hardware.dynamiccameraserver \
     init.kernel.post_boot-memory \
+    camera-preamble.json \
     android.hardware.nfc-service-st \
+    dvs-aidl-service \
+    miaon_frame \
     mifaced \
     misensor_camera \
+    vendor.novatek.hardware.visdisplaysrv-service \
     vendor.qti.camera.provider-service_64 \
+    vendor.xiaomi.hardware.authsecretd \
+    vendor.xiaomi.hardware.seaaudio-service \
+    vendor.xiaomi.hardware.vibratorfeature.service \
     mitee_info \
     tee-supplicant \
     toucheventcheck
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_camera_aon_front_a_1_pb \
+    vendor_lib64_camera_aon_rear_a_2_pb \
+    vendor_lib64_camera_bitmlconfig_bin \
+    vendor_lib64_camera_com_qti_ofe_profiledb_default_bin \
+    vendor_lib64_camera_com_qti_ofe_profiledb_sm8850_bin \
+    vendor_lib64_camera_qfdserviceconfig_bin \
+    vendor_lib64_hw_camera_qcom_core_so \
+    vendor_lib64_hw_camera_qcom_so \
+    vendor_lib64_hw_com_qti_chi_override_so

@@ -899,6 +899,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.aidl.intentaware-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -1121,6 +1146,31 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "liblog",
                 "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.oldcredential-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.oldcredential-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -1776,7 +1826,7 @@ cc_prebuilt_library_shared {
                 "libcamxfdengine",
                 "libcom.qti.chinodeutils",
                 "libchilog",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libvega_common",
                 "libmicamGlobalPool",
                 "libcamxcsl",
@@ -2848,7 +2898,7 @@ cc_prebuilt_library_shared {
                 "libcamxfdengine",
                 "libcom.qti.chinodeutils",
                 "libchilog",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libz",
                 "libc",
                 "libm",
@@ -8371,6 +8421,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.xiaomi.plugin.watermarkV2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.watermarkV2.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamera_metadata",
+                "libcom.xiaomi.pluginutils",
+                "libcom.xiaomi.metadatautils",
+                "libcom.xiaomi.debug",
+                "com.xiaomi.camdfx",
+                "libcamlog",
+                "libcom.xiaomi.cam.miexifmgr",
+                "libnativewindow",
+                "libui",
+                "libEGL",
+                "libGLESv3",
+                "libpendant_wrapper",
+                "libcom.xiaomi.ionutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/plugins",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.xiaomi.plugin.yuv2Heic",
     owner: "xiaomi",
     strip: {
@@ -8555,7 +8646,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.cam.miexifmgr",
                 "libpostprocinfo",
                 "libhardware",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libfastmessage",
                 "libmicamera_hal_core",
                 "libc++",
@@ -8835,7 +8926,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.cam.miexifmgr",
                 "libpostprocinfo",
                 "libhardware",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libfastmessage",
                 "libmicamera_hal_core",
                 "libc++",
@@ -13099,7 +13190,7 @@ cc_prebuilt_library_shared {
                 "libfastmessage",
                 "libsync",
                 "libutilscallstack",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libc",
                 "libm",
                 "libdl",
@@ -13123,7 +13214,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.xiaomi.stubv1.camx.so",
             ],
             shared_libs: [
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libcamximageformatutils",
                 "libcamxcsl",
                 "libcutils",
@@ -13316,7 +13407,7 @@ cc_prebuilt_library_shared {
                 "libsensinghubapi-prop",
                 "libsensinghubapi",
                 "libQshQmiIDL",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libsimulation",
                 "libcameraobserver",
                 "libmicamGlobalPool",
@@ -15689,7 +15780,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "com.qti.sfw.settings",
                 "libcamxcommonutils",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -16960,7 +17051,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcom.xiaomi.dsac.so",
             ],
             shared_libs: [
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libcutils",
                 "libdmabufheap",
                 "libcamera_metadata",
@@ -19484,7 +19575,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.ecoenginemonitor",
                 "libcom.xiaomi.sensorpolicy",
                 "libcom.xiaomi.pluginutils",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libmicamGlobalPool",
                 "libcameraopt_stub",
                 "com.xiaomi.camdfx",
@@ -20519,6 +20610,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpendant_wrapper",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpendant_wrapper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libMiPhotoFilter",
+                "libEGL",
+                "libGLESv3",
+                "libdl",
+                "libm",
+                "libz",
+                "libnativewindow",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libportrait_repair_qnn",
     owner: "xiaomi",
     strip: {
@@ -20942,7 +21062,7 @@ cc_prebuilt_library_shared {
                 "libutilscallstack",
                 "com.xiaomi.immunesystem.bigdata",
                 "libcamximageformatutils",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libz",
                 "libc",
                 "libm",
@@ -21472,6 +21592,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.hardware.vibratorCL.impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.hardware.vibratorCL.impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.vibrator-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libpalclient",
+                "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.novatek.hardware.visdisplaysrv-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -21771,6 +21920,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.miauthsecretd-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.xiaomi.hardware.miauthsecretd-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.postprocservice-V1-impl",
     owner: "xiaomi",
     strip: {
@@ -21834,6 +22008,31 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.seaaudio-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.xiaomi.hardware.seaaudio-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
 prebuilt_rfsa {
     name: "odm_lib_rfsa_adsp_libCalculator_skel_so",
     filename: "libCalculator_skel.so",
@@ -21862,6 +22061,15 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+    name: "odm_lib_rfsa_adsp_libQnnHtpV81Skel_so",
+    filename: "libQnnHtpV81Skel.so",
+    owner: "xiaomi",
+    src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV81Skel.so",
+    relative_install_path: "adsp",
+    device_specific: true,
+}
+
+prebuilt_rfsa {
     name: "odm_lib_rfsa_adsp_libQnnNetRunDirectV81Skel_so",
     filename: "libQnnNetRunDirectV81Skel.so",
     owner: "xiaomi",
@@ -21875,6 +22083,15 @@ prebuilt_rfsa {
     filename: "libQnnSaver.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnSaver.so",
+    relative_install_path: "adsp",
+    device_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "odm_lib_rfsa_adsp_libQnnSystem_so",
+    filename: "libQnnSystem.so",
+    owner: "xiaomi",
+    src: "proprietary/odm/lib/rfsa/adsp/libQnnSystem.so",
     relative_install_path: "adsp",
     device_specific: true,
 }
@@ -22051,9 +22268,63 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "dvs-aidl-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/dvs-aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "miaon_frame.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/miaon_frame.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.novatek.hardware.visdisplaysrv.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.novatek.hardware.visdisplaysrv.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.aon.auth.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.aon.auth.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.miauthsecretd.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.miauthsecretd.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.seaaudio.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.seaaudio.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.vibratorfeature.service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -22084,12 +22355,53 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.dynamiccameraserver",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.xiaomi.hardware.dynamiccameraserver",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.camera.injection-V1-ndk",
+                "vendor.xiaomi.hardware.camera.injection-service",
+                "vendor.xiaomi.hardware.camera.synthetic-V1-ndk",
+                "vendor.xiaomi.hardware.camera.synthetic-impl",
+                "libnativewindow",
+                "libbase",
+                "libbinder_ndk",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
 sh_binary {
     name: "init.kernel.post_boot-memory",
     owner: "xiaomi",
     src: "proprietary/vendor/bin/init.kernel.post_boot-memory.sh",
     filename: "init.kernel.post_boot-memory.sh",
     soc_specific: true,
+}
+
+sh_binary {
+    name: "camera-preamble.json",
+    owner: "xiaomi",
+    src: "proprietary/odm/bin/camera-preamble.json",
+    filename: "camera-preamble.json",
+    device_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -22107,6 +22419,77 @@ cc_prebuilt_binary {
                 "libutils",
                 "libbinder_ndk",
                 "nfc_nci.st21nfc.st",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "dvs-aidl-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/dvs-aidl-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.frameworks.sensorservice-V1-ndk",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "miaon_frame",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/miaon_frame",
+            ],
+            shared_libs: [
+                "libsns_direct_channel_stub",
+                "libcdsprpc",
+                "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libmediandk",
+                "libnativewindow",
+                "libui",
+                "libutils",
+                "libsensinghubapi",
+                "libsensinghubapi-prop",
+                "libsnsutils",
+                "vendor.xiaomi.sensor.aonframe-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22186,6 +22569,45 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "vendor.novatek.hardware.visdisplaysrv-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.novatek.hardware.visdisplaysrv-service",
+            ],
+            shared_libs: [
+                "vendor.novatek.hardware.visdisplaysrv-V1-ndk",
+                "vendor.xiaomi.hardware.framecapturemanager-V1-ndk",
+                "vendor.xiaomi.hardware.framemaster-V1-ndk",
+                "libframemasterintf",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libcutils",
+                "libdumpstateutil",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "libxml2",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.qti.camera.provider-service_64",
     owner: "xiaomi",
     target: {
@@ -22219,11 +22641,116 @@ cc_prebuilt_binary {
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libcdsprpc",
                 "libutilscallstack",
                 "com.xiaomi.camdfx",
                 "libcameraopt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.authsecretd",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.xiaomi.hardware.authsecretd",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.miauthsecretd-V1-ndk",
+                "libbase",
+                "liblog",
+                "libbinder_ndk",
+                "libmisight",
+                "libcutils",
+                "vendor.xiaomi.hardware.oldcredential-V1-ndk",
+                "libGPTEE_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.seaaudio-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.xiaomi.hardware.seaaudio-service",
+            ],
+            shared_libs: [
+                "libutils",
+                "libbase",
+                "liblog",
+                "libbinder_ndk",
+                "vendor.xiaomi.hardware.seaaudio-V1-ndk",
+                "libcutils",
+                "libRecordCNN",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.vibratorfeature.service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libsoc_helper",
+                "liblog",
+                "libbinder_ndk",
+                "libtinyalsa",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.vibrator-V2-ndk",
+                "vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk",
+                "vendor.hardware.vibratorCL.impl",
+                "libmisight",
+                "libpalclient",
+                "libxml2",
                 "libc++",
                 "libc",
                 "libm",
@@ -22323,4 +22850,67 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_front_a_1_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_front_a_1.pb",
+    symlink_target: "/odm/lib64/camera/aon_front_a_1.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_rear_a_2_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_rear_a_2.pb",
+    symlink_target: "/odm/lib64/camera/aon_rear_a_2.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_bitmlconfig_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/bitmlconfig.bin",
+    symlink_target: "/odm/lib64/camera/bitmlconfig.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_com_qti_ofe_profiledb_default_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/com.qti.ofe.profiledb.default.bin",
+    symlink_target: "/odm/lib64/camera/com.qti.ofe.profiledb.default.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_com_qti_ofe_profiledb_sm8850_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/com.qti.ofe.profiledb.sm8850.bin",
+    symlink_target: "/odm/lib64/camera/com.qti.ofe.profiledb.sm8850.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_qfdserviceconfig_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/qfdserviceconfig.bin",
+    symlink_target: "/odm/lib64/camera/qfdserviceconfig.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_camera_qcom_core_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/camera.qcom.core.so",
+    symlink_target: "/odm/lib64/hw/camera.qcom.core.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_camera_qcom_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/camera.qcom.so",
+    symlink_target: "/odm/lib64/hw/camera.qcom.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_com_qti_chi_override_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/com.qti.chi.override.so",
+    symlink_target: "/odm/lib64/hw/com.qti.chi.override.so",
 }
