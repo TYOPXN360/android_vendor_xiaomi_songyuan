@@ -12918,6 +12918,52 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.xiaomi.immunesystem.hook.chi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.xiaomi.immunesystem.hook.chi.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libmetatagwrapper",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcameraopt",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "com.xiaomi.camdfx",
+                "com.xiaomi.customlogger",
+                "com.xiaomi.stubv1.chi",
+                "libiqdbgmgr",
+                "libshadowhook",
+                "com.xiaomi.immunesystem.client",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.xiaomi.immunesystem.hook.mivi",
     owner: "xiaomi",
     strip: {

@@ -1434,6 +1434,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.immunesystem.config \
     com.xiaomi.immunesystem.core \
     com.xiaomi.immunesystem.hook.camx \
+    com.xiaomi.immunesystem.hook.chi \
     com.xiaomi.immunesystem.hook.mivi \
     com.xiaomi.immunesystem.hook.mtkhal \
     com.xiaomi.jpegop \
