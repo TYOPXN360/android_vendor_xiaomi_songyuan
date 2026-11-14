@@ -1036,6 +1036,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/etc/dolby_vision.cfg \
     vendor/xiaomi/songyuan/proprietary/odm/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/vendor/persist/display/dolby_vision.cfg \
     vendor/xiaomi/songyuan/proprietary/product/etc/device_features/songyuan.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/songyuan.xml \
+    vendor/xiaomi/songyuan/proprietary/system/bin/cameraserver:$(TARGET_COPY_OUT_SYSTEM)/bin/cameraserver \
+    vendor/xiaomi/songyuan/proprietary/system/lib64/libcamera_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_client.so \
     vendor/xiaomi/songyuan/proprietary/vendor/bin/vendor.qti.qtvm.proxyclient-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qtvm.proxyclient-service \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/audio/sku_canoe/mcs_defs_canoe_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mcs_defs_canoe_mtp.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/audio/sku_canoe/mixer_paths_canoe_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/mixer_paths_canoe_mtp.xml \
