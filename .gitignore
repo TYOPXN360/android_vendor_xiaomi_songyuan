@@ -1,0 +1,3 @@
+# Only VCS metadata is excluded; every blob is tracked so that a faulty
+# re-extraction cannot silently delete files.
+.git/

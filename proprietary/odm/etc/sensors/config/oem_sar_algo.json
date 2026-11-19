@@ -1,0 +1,69 @@
+{
+	"config": {
+	"hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+	"soc_id": ["519", "557", "536", "577", "618", "660"]
+	},
+	"oem_sar_algo": {
+		"owner": "oem_sar_algo",
+		".params":{
+		  "owner": "oem_sar_algo",
+			"threshold1": {
+			  "ver": "0", "type": "flt", "data": "450"
+			},
+			"threshold2": {
+			  "ver": "0", "type": "flt", "data": "4500"
+			},
+			"threshold3": {
+			  "ver": "0", "type": "flt", "data": "11000"
+			},
+			"threshold4": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"threshold5": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"use_acc_gyro": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"use_qmi": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"use_sar_secondary": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"use_channel": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"use_channel_16mm": {
+			  "ver": "0", "type": "flt", "data": "1"
+			},
+			"disable_usb_cali": {
+			  "ver": "0", "type": "flt", "data": "0"
+			}
+		},
+		".params_reg2":{
+		  "owner": "oem_sar_algo",
+			"threshold1": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"threshold2": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"threshold3": {
+			  "ver": "0", "type": "flt", "data": "0"
+			},
+			"threshold4": {
+			  "ver": "0", "type": "flt", "data": "0"
+			}
+		},
+		".params_step":{
+		  "owner": "oem_sar_algo",
+			"usestep": {
+			  "ver": "0", "type": "flt", "data": "1"
+			},
+			"stepcount": {
+			  "ver": "0", "type": "flt", "data": "100"
+			}
+		}
+	}
+}

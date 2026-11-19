@@ -1,0 +1,20 @@
+{
+    "DfxNcsCheckCondition": {
+        "CameraRoleWithGyro": [],
+        "CameraRoleWithAccel": [],
+        "CameraRoleWithGravity": [],
+        "CameraRoleWithAf": [],
+        "CameraRoleWithOis": []
+    },
+    "DfxCheckProperty": {
+        "NcsErrorCountThreshold": 10,
+        "NcsContinuousThreshold": 2,
+        "AlgoResultErrorCountThreshold": 3,
+        "AlgoResultContinuousThreshold": 2
+    },
+    // NCS sampling rate, unit: Hz
+    "ncsRates": {
+        "gyro": 416.0,
+        "accel": 416.0
+    }
+}

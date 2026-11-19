@@ -1,0 +1,21 @@
+{
+    "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["519", "557", "536", "577", "660"]
+    },
+    "oem_pick_up": {
+      "owner": "oem_pick_up",
+      ".feature":{
+        "owner": "oem_pick_up",
+            "put_down_threadhold": {
+              "ver": "0", "type": "flt", "data": "80"
+            },
+            "isflip": {
+              "ver": "0", "type": "flt", "data": "0"
+            },
+            "isPad": {
+              "ver": "0", "type": "flt", "data": "0"
+            }
+        }
+    }
+ }

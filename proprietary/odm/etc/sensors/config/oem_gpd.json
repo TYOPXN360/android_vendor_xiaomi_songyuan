@@ -1,0 +1,91 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP",
+      "QRD",
+      "Dragon",
+      "Surf",
+      "HDK",
+      "RCM"
+    ],
+    "soc_id": [
+      "519",
+      "557",
+      "536",
+      "577",
+      "618",
+	  "660"
+    ]
+  },
+  "oem_gpd": {
+    "owner": "oem_gpd",
+    ".feature": {
+      "owner": "oem_gpd",
+      "isflip": {
+        "ver": "0",
+        "type": "flt",
+        "data": "0"
+      },
+      "isfold": {
+        "ver": "0",
+        "type": "flt",
+        "data": "0"
+      },
+      "fold_labels": {
+        "ver": "0",
+        "type": "flt",
+        "data": "9"
+      },
+      "buffer_len": {
+        "ver": "0",
+        "type": "flt",
+        "data": "80"
+      },
+      "threshold_static_gyro_min": {
+        "ver": "0",
+        "type": "flt",
+        "data": "0.01"
+      },
+      "threshold_gyro_min": {
+        "ver": "0",
+        "type": "flt",
+        "data": "0.02"
+      },
+      "threshold_lacc_max": {
+        "ver": "0",
+        "type": "flt",
+        "data": "9.0"
+      },
+      "fold_state": {
+        "ver": "0",
+        "type": "flt",
+        "data": "0"
+      },
+      "unfold_state": {
+        "ver": "0",
+        "type": "flt",
+        "data": "1"
+      },
+      "cnn1": {
+        "ver": "1",
+        "type": "flt",
+        "data": "0.00005055"
+      },
+      "cnn2": {
+        "ver": "1",
+        "type": "flt",
+        "data": "0.00007286"
+      },
+      "cnn3": {
+        "ver": "1",
+        "type": "flt",
+        "data": "0.00007068"
+      },
+      "fc": {
+        "ver": "1",
+        "type": "flt",
+        "data": "0.00005379"
+      }
+    }
+  }
+}

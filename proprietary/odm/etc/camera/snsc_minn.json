@@ -1,0 +1,158 @@
+{
+    "ellc": {
+        "phone_version": "Q11",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            800,
+            1056
+        ],
+        "overlap": [
+            32,
+            32
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_HP5_DXG_JDD_260603.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 0,
+                    "overlap": [
+                        32,
+                        32
+                    ]
+                },
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_HP5_LBMF_JDD_260602.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1,
+                    "overlap": [
+                        32,
+                        32
+                    ]
+                },
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_JN5_DXG_JDD_251118.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2,
+                    "overlap": [
+                        32,
+                        32
+                    ]
+                },
+                {
+                    "bin_name": "snsc_minn.bin",
+                    "model_name": "SNSC_JN5_LBMF_JDD_260708.minn",
+                    "model_desc": "jdd_quant_241119_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            800,
+                            1056,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 3,
+                    "overlap": [
+                        32,
+                        32
+                    ]
+                }
+            ]
+        }
+    }
+}

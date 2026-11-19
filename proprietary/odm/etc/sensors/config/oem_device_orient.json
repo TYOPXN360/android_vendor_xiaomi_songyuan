@@ -1,0 +1,21 @@
+{
+    "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["519", "557", "536", "577", "660"]
+    },
+    "oem_device_orient": {
+      "owner": "oem_device_orient",
+      ".feature":{
+        "owner": "oem_device_orient",
+            "is_flip": {
+              "ver": "0", "type": "flt", "data": "0"
+            },
+            "is_flat_report": {
+              "ver": "1", "type": "flt", "data": "1"
+            },
+            "use_display_event": {
+              "ver": "0", "type": "flt", "data": "0"
+            }
+        }
+    }
+}

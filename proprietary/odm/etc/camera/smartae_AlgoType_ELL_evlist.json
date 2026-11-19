@@ -1,0 +1,60 @@
+{
+    "Description": "Xiaomi SmartAE config file - Arbitrator", 
+    "phone_code": "Q11X", 
+    "jsonVersion": "ELL-V2.0-20260228", 
+    "AlgoType_ELL": {
+        "CHECKER": {
+            "UW": {
+                "Description": "EV list", 
+                "counts": 1, 
+                "ev_index": [0], 
+                "CONDITIONS": [
+                    {
+                        "condition": "camera_mode", 
+                        "operator": "=", 
+                        "value": [147473]
+                    }
+                ]
+            }, 
+            "WIDE": {
+                "Description": "EV list", 
+                "counts": 1, 
+                "ev_index": [0], 
+                "CONDITIONS": [
+                    {
+                        "condition": "camera_mode", 
+                        "operator": "=", 
+                        "value": [147473]
+                    }
+                ]
+            }, 
+            "ULTRATELE": {
+                "Description": "EV list", 
+                "counts": 1, 
+                "ev_index": [0], 
+                "CONDITIONS": [
+                    {
+                        "condition": "camera_mode", 
+                        "operator": "=", 
+                        "value": [147473]
+                    }
+                ]
+            }
+        }, 
+        "LIST": [
+            {
+                "Description": "V_0", 
+                "frames": 8, 
+                "ev_value": [0, 0, 0, 0, 0, 0, -1, -2], 
+                "capture_mode": [1, 1, 1, 1, 1, 1, 1, 1], 
+                "adrc_on": [0, 0, 0, 0, 0, 0, 0, 0], 
+                "sensor_mode": [0, 0, 0, 0, 0, 0, 0, 0], 
+                "ois_sync": [1, 1, 1, 1, 0, 0, 0, 0], 
+                "motion_exp_type": [1, 1, 1, 1, 1, 1, 1, 1], 
+                "min_exp_check": false, 
+                "change_to_index": null
+            }
+        ], 
+        "SLAVE_LIST": []
+    }
+}

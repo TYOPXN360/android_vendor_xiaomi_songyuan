@@ -1,0 +1,21 @@
+{
+    "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["519", "557", "536", "577", "618", "660"]
+    },
+    "oem_healthy_use_of_mobile": {
+      "owner": "oem_healthy_use_of_mobile",
+      ".config":{
+        "owner": "oem_healthy_use_of_mobile",
+            "fldst": {
+              "ver": "0", "type": "flt", "data": "20"
+            },
+            "darklux": {
+              "ver": "0", "type": "flt", "data": "15"
+            },
+            "cmdid": {
+              "ver": "0", "type": "flt", "data": "0"
+            }
+      }
+    }
+  }

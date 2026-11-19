@@ -1,0 +1,70 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "songyuan_wide_a",
+            "roleID": 0
+        },
+        {
+            "sensorName": "songyuan_wide_a_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "songyuan_wide_a_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "songyuan_wide_a_ois",
+            "roleID": 0
+        },
+        {
+            "sensorName": "songyuan_front_a",
+            "roleID": 1
+        },
+        {
+            "sensorName": "songyuan_front_a_eeprom",
+            "roleID": 1
+        },
+        {
+            "sensorName": "songyuan_ultra_a",
+            "roleID": 21
+        },
+        {
+            "sensorName": "songyuan_ultra_a_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "songyuan_tele_a",
+            "roleID": 23
+        },
+        {
+            "sensorName": "songyuan_tele_a_eeprom",
+            "roleID": 23
+        },
+        {
+            "sensorName": "songyuan_tele_a_actuator",
+            "roleID": 23
+        },
+        {
+            "sensorName": "songyuan_tele_a_ois",
+            "roleID": 23
+        }
+    ],
+
+    "TOMBSTONE_FUNCTION":{
+        "isEnable": true,
+        "fileNumber": 20,
+        "version" :"1.0"
+    },
+
+    "SANITY_STAGE_LIST" : {
+        "STAGE_ENUM" : ["STAGE_1", "STAGE_2", "BLACKHOLE"],
+        "CURRENT_STAGE" : "STAGE_2",
+        "STAGE_1" : [],
+        "STAGE_2" : [2073914, 2031009, 2041009, 2021009, 2011009, 2001009, 2111009, 2131009, 2171009, 2191009, 2101009],
+        "BLACKHOLE" : [920005002, 153000003, 153000004, 153000006, 153000007, 153000013, 105003002]
+    },
+
+    "BLACK_BOX_FUNCTION":{
+        "isEnable": false
+    }
+}

@@ -1,0 +1,307 @@
+{
+    "ellc": {
+        "phone_version": "O1",
+        "model_version": "v1.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            512,
+            512
+        ],
+        "overlap": [
+            16,
+            16
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_wide_hdsr.minn",
+                    "dlc_desc": "jdd_quant_240926_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_wide_hdsr_portrait.minn",
+                    "dlc_desc": "jdd_quant_240926_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_wide_dxg.minn",
+                    "dlc_desc": "jdd_quant_240926_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_wide_dxg_portrait.minn",
+                    "dlc_desc": "jdd_quant_240926_o1wide_distill",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            15
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_tele_hdsr.minn",
+                    "dlc_desc": "jdd_quant_241021_O1_tele_distillft",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_tele_hdsr_portrait.minn",
+                    "dlc_desc": "jdd_quant_241021_O1_tele_distillft",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_st_hdsr.minn",
+                    "dlc_desc": "v2025.319",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                },
+                {
+                    "bin_name": "hdsr_minn.bin",
+                    "model_name": "jdd_ev0_st_hdsr_portrait.minn",
+                    "dlc_desc": "v2025.319",
+                    "input": {
+                        "name": "input_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            13
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output_1",
+                        "shape": [
+                            1,
+                            528,
+                            528,
+                            3
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 1
+                }
+            ]
+        },
+        "relight_setting": {
+            "range1_luxindex_start": 495.0,
+            "range1_luxindex_end": 520.0,
+            "range1_luxindex_start_ratio": 1.0,
+            "range1_luxindex_end_ratio": 1.0,
+            "range2_luxindex_start": 520.0,
+            "range2_luxindex_end": 540.0,
+            "range2_luxindex_start_ratio": 1.0,
+            "range2_luxindex_end_ratio": 1.0,
+            "range3_luxindex_start": 540.0,
+            "range3_luxindex_end": 550.0,
+            "range3_luxindex_start_ratio": 1.0,
+            "range3_luxindex_end_ratio": 1.0,
+            "range4_luxindex_start": 550.0,
+            "range4_luxindex_end": 580.0,
+            "range4_luxindex_start_ratio": 1.0,
+            "range4_luxindex_end_ratio": 1.0
+        },
+        "Threshold": {
+            "T_brightness": 150,
+            "T_dark_scene": 25000,
+            "T_motion_1": 15,
+            "T_motion_2": 50000000,
+            "T_over_expose_threshold": 3500,
+            "T_clip_ratio": 0.36,
+            "T_first_frame_luxindex": 260,
+            "T_merge_ratio": 0.95,
+            "T_pow_merge_ratio": [
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100
+            ]
+        }
+    }
+}

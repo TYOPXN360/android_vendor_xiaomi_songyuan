@@ -1,0 +1,6 @@
+device_name:Q11_series
+process_timeout_ms:10000
+error_code_remap_algo:201,202,203,204,225,227
+error_code_remap_origin:1006,1300,1400,1005,1010,1011
+error_code_remap_mapper:1801,1802,1803,1804,1701,1702
+enable_xdr_callback:0

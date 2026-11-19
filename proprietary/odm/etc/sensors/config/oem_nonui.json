@@ -1,0 +1,33 @@
+{
+    "config": {
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["660"]
+    },
+    "oem_nonui": {
+      "owner": "oem_nonui",
+      ".feature":{
+        "owner": "oem_nonui",
+            "pThreshold": {
+              "ver": "0", "type": "flt", "data": "200"
+            },
+            "isflip": {
+              "ver": "0", "type": "flt", "data": "0"
+            },
+            "isfold": {
+              "ver": "0", "type": "flt", "data": "0"
+            },
+            "use_prox": {
+              "ver": "0", "type": "flt", "data": "1"
+            },
+            "has_back_light": {
+              "ver": "0", "type": "flt", "data": "1"
+            },
+            "pocket_invert": {
+              "ver": "0", "type": "flt", "data": "1"
+            },
+            "ps_debounce": {
+              "ver": "0", "type": "flt", "data": "2"
+            }
+        }
+    }
+}
