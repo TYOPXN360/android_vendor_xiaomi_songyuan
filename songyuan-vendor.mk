@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/odm/etc/acdbdata/Mi/model924_eai_int8_8850.eai:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Mi/model924_eai_int8_8850.eai \
     vendor/xiaomi/songyuan/proprietary/odm/etc/acdbdata/Mi/model9414_eai_int8_8850.eai:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Mi/model9414_eai_int8_8850.eai \
     vendor/xiaomi/songyuan/proprietary/odm/etc/acdbdata/Mi/model_eai_int8_8850_970k_AIoff.eai:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Mi/model_eai_int8_8850_970k_AIoff.eai \
+    vendor/xiaomi/songyuan/proprietary/odm/etc/audio/mis_audioled_configs.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_audioled_configs.bin \
     vendor/xiaomi/songyuan/proprietary/odm/etc/audio/mis_gameop_configs.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_gameop_configs.bin \
     vendor/xiaomi/songyuan/proprietary/odm/etc/audio/mis_head.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_head.bin \
     vendor/xiaomi/songyuan/proprietary/odm/etc/audio/mis_head_spatial.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/mis_head_spatial.bin \
@@ -1119,6 +1120,8 @@ PRODUCT_PACKAGES += \
     libsvDescMatchImpl_dsp_skel \
     libsvDescMatch_dsp \
     libsvdsp \
+    libsvswdsp \
+    libsvswdsp_skel \
     libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
@@ -1746,6 +1749,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_supernight_capture_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmialgo_tracker_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
+    XMRemoteController \
     xiaomi-modem-common \
     avf_qcvm_manager.xml \
     android.hardware.biometrics.face-v4.xml \

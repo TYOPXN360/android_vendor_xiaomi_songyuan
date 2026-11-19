@@ -839,6 +839,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsvswdsp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libsvswdsp.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsvswdsp_skel",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libsvswdsp_skel.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvpp_frc",
     owner: "xiaomi",
     strip: {
@@ -22284,6 +22324,19 @@ prebuilt_rfsa {
     src: "proprietary/odm/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so",
     relative_install_path: "adsp",
     device_specific: true,
+}
+
+android_app_import {
+    name: "XMRemoteController",
+    owner: "xiaomi",
+    apk: "proprietary/product/app/XMRemoteController/XMRemoteController.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    skip_preprocessed_apk_checks: true,
+    product_specific: true,
 }
 
 dex_import {
