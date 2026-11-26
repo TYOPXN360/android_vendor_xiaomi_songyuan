@@ -1091,7 +1091,6 @@ PRODUCT_COPY_FILES += \
 # device/xiaomi/songyuan/proprietary-files.txt so a regeneration produces the
 # same list.
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/songyuan/proprietary/product/app/MiSound/MiSound.apk:$(TARGET_COPY_OUT_PRODUCT)/app/MiSound/MiSound.apk \
     vendor/xiaomi/songyuan/proprietary/vendor/lib64/libmisoundsa_pad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisoundsa_pad.so \
     vendor/xiaomi/songyuan/proprietary/odm/lib64/libhta_hexagon_runtime_qnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libhta_hexagon_runtime_qnn.so
 # Ozo spatial audio effect stack (referenced by audio_effects_config.xml)
@@ -1104,5 +1103,4 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozoaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoaudioutils.so \
     vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozocapability.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozocapability.so \
     vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozotensorflowlite_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozotensorflowlite_c.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/etc/init/ozonotify-1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ozonotify-1.0-service.rc \
-    vendor/xiaomi/songyuan/proprietary/vendor/etc/vintf/manifest/ozonotify-1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ozonotify-1.0.xml
+    vendor/xiaomi/songyuan/proprietary/vendor/etc/init/ozonotify-1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ozonotify-1.0-service.rc

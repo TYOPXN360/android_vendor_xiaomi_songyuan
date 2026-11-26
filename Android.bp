@@ -23013,3 +23013,25 @@ install_symlink {
     installed_location: "lib64/hw/com.qti.chi.override.so",
     symlink_target: "/odm/lib64/hw/com.qti.chi.override.so",
 }
+
+// Xiaomi MiSound (audio effects UI). The APK keeps its stock signature, so it
+// must be imported as a presigned prebuilt instead of being copied with
+// PRODUCT_COPY_FILES (kati rejects APKs there).
+android_app_import {
+    name: "MiSound",
+    owner: "xiaomi",
+    apk: "proprietary/product/app/MiSound/MiSound.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+// Ozo notify HAL manifest. VINTF fragments cannot go through
+// PRODUCT_COPY_FILES (kati rejects them), so ship it as a vintf_fragment.
+vintf_fragment {
+    name: "ozonotify-1.0.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/ozonotify-1.0.xml",
+    vendor: true,
+}
