@@ -1150,7 +1150,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmi_vvc_lpf_skel_so \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    com.android.ozoaudio.notify-V1-cpp \
     com.qti.actuator.songyuan_tele_a_actuator \
     com.qti.actuator.songyuan_wide_a_actuator \
     com.qti.eeprom.songyuan_front_a_eeprom \

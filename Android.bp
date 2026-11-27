@@ -1574,32 +1574,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.android.ozoaudio.notify-V1-cpp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/com.android.ozoaudio.notify-V1-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.actuator.songyuan_tele_a_actuator",
     owner: "xiaomi",
     strip: {
