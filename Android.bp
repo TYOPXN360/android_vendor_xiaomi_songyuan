@@ -22563,7 +22563,6 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
-    skip_preprocessed_apk_checks: true,
     product_specific: true,
 }
 
