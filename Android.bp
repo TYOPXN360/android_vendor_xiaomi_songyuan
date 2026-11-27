@@ -23017,11 +23017,15 @@ install_symlink {
 // Xiaomi MiSound (audio effects UI). The APK keeps its stock signature, so it
 // must be imported as a presigned prebuilt instead of being copied with
 // PRODUCT_COPY_FILES (kati rejects APKs there).
+// targetSdkVersion is 36, and the build refuses presigned prebuilts at or above
+// 30 unless they are marked preprocessed: such an APK is already signed with
+// signature v2 and re-processing would destroy that signature.
 android_app_import {
     name: "MiSound",
     owner: "xiaomi",
     apk: "proprietary/product/app/MiSound/MiSound.apk",
     presigned: true,
+    preprocessed: true,
     dex_preopt: {
         enabled: false,
     },
