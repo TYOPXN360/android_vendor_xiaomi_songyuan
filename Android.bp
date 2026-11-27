@@ -23032,10 +23032,10 @@ android_app_import {
     product_specific: true,
 }
 
-// Ozo notify HAL manifest. VINTF fragments cannot go through
-// PRODUCT_COPY_FILES (kati rejects them), so ship it as a vintf_fragment.
-vintf_fragment {
-    name: "ozonotify-1.0.xml",
-    src: "proprietary/vendor/etc/vintf/manifest/ozonotify-1.0.xml",
-    vendor: true,
-}
+// NOTE: ozonotify-1.0.xml is deliberately NOT shipped as a vintf_fragment.
+// com.android.ozoaudio.notify is a Xiaomi-private HAL that is absent from the
+// AOSP framework compatibility matrix; declaring it makes
+// check_target_files_vintf fail with "files are incompatible" and the OTA
+// package cannot be generated. The service binary itself is not shipped by
+// stock either (its .rc is disabled + oneshot), so the declaration has no
+// functional effect. The xml is kept in proprietary/ for future use only.
