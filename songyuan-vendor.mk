@@ -1048,6 +1048,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/init/avf_qcvm_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/avf_qcvm_manager.rc \
+    vendor/xiaomi/songyuan/proprietary/vendor/etc/init/ozonotify-1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ozonotify-1.0-service.rc \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/init/vendor.qti.qtvm.proxyclient-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qtvm.proxyclient-service.rc \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/songyuan/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
@@ -1087,21 +1088,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/songyuan/proprietary/vendor/lib64/libzerocopy.dylib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzerocopy.dylib.so
 
 PRODUCT_PACKAGES += \
+    com.android.ozoaudio.notify-V1-ndk \
     libAIHDIcon \
     libRecordCNN \
     libSEESalt \
     libSNPESample \
     libUSTANative \
+    libav_ozoencoder \
     libcamera2ndk_vendor \
     libcameraobserver \
     libcameraopt \
     libdng_sdk-songyuan \
     libheichal_qcom \
     libmialgo \
+    libmisoundsa_pad \
     libnova \
     libopencl_loader \
     libopencv_core \
     libopencv_imgproc \
+    libozoaudio \
+    libozoaudioutils \
+    libozocapability \
+    libozotensorflowlite_c \
     libproj_qmot_tracker \
     libproj_sot \
     libDLDPP_skel \
@@ -1125,6 +1133,7 @@ PRODUCT_PACKAGES += \
     libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
+    libozoaidl \
     vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk \
     vendor.xiaomi.hardware.aidl.intentaware-V1-ndk \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -1141,6 +1150,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmi_vvc_lpf_skel_so \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0 \
+    com.android.ozoaudio.notify-V1-cpp \
     com.qti.actuator.songyuan_tele_a_actuator \
     com.qti.actuator.songyuan_wide_a_actuator \
     com.qti.eeprom.songyuan_front_a_eeprom \
@@ -1595,6 +1605,7 @@ PRODUCT_PACKAGES += \
     libharbo \
     libharbo_se \
     libhme \
+    libhta_hexagon_runtime_qnn \
     libhwliqinterface2 \
     libhwlispcffdump \
     libipebpsstriping \
@@ -1749,6 +1760,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_supernight_capture_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmialgo_tracker_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
+    MiSound \
     XMRemoteController \
     xiaomi-modem-common \
     avf_qcvm_manager.xml \
@@ -1788,23 +1800,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_camera_qcom_core_so \
     vendor_lib64_hw_camera_qcom_so \
     vendor_lib64_hw_com_qti_chi_override_so
-
-# MiSound (Xiaomi audio effects UI) helper blobs and the QNN HTA runtime.
-# MiSound.apk itself is installed as an android_app_import module in Android.bp.
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libmisoundsa_pad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisoundsa_pad.so \
-    vendor/xiaomi/songyuan/proprietary/odm/lib64/libhta_hexagon_runtime_qnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libhta_hexagon_runtime_qnn.so
-
-# Ozo spatial audio effect stack (referenced by audio_effects_config.xml).
-# ozonotify manifest is NOT installed: the HAL is Xiaomi-private and absent from
-# the AOSP framework compatibility matrix, which would fail the OTA VINTF check.
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/songyuan/proprietary/system_ext/lib/com.android.ozoaudio.notify-V1-cpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.android.ozoaudio.notify-V1-cpp.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/soundfx/libozoaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libozoaidl.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libav_ozoencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libav_ozoencoder.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/com.android.ozoaudio.notify-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.android.ozoaudio.notify-V1-ndk.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozoaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoaudio.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozoaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozoaudioutils.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozocapability.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozocapability.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/lib64/libozotensorflowlite_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libozotensorflowlite_c.so \
-    vendor/xiaomi/songyuan/proprietary/vendor/etc/init/ozonotify-1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ozonotify-1.0-service.rc

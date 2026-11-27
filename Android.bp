@@ -13,6 +13,31 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.android.ozoaudio.notify-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/com.android.ozoaudio.notify-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libAIHDIcon",
     owner: "xiaomi",
     strip: {
@@ -151,6 +176,38 @@ cc_prebuilt_library_shared {
                 "libsensinghubsession",
                 "libsensinghubapi",
                 "libsensinghubapi-prop",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libav_ozoencoder",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libav_ozoencoder.so",
+            ],
+            shared_libs: [
+                "libozoaudio",
+                "libozoaudioutils",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "com.android.ozoaudio.notify-V1-ndk",
+                "libozocapability",
                 "libc++",
                 "libc",
                 "libm",
@@ -356,6 +413,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmisoundsa_pad",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmisoundsa_pad.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnova",
     owner: "xiaomi",
     strip: {
@@ -446,6 +527,107 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc++",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libozoaudio",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libozoaudio.so",
+            ],
+            shared_libs: [
+                "libozotensorflowlite_c",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libozoaudioutils",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libozoaudioutils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libozocapability",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libozocapability.so",
+            ],
+            shared_libs: [
+                "libozoaudio",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libozotensorflowlite_c",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libozotensorflowlite_c.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -939,6 +1121,52 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libozoaidl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libozoaidl.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V4-ndk",
+                "libalsautilsv2",
+                "libaudio_aidl_conversion_common_ndk",
+                "libnbaio_mono",
+                "libmedia_helper",
+                "libstagefright_foundation",
+                "libtinyalsav2",
+                "libxml2",
+                "liblog",
+                "libaudioutils",
+                "libav_ozoencoder",
+                "com.android.ozoaudio.notify-V1-ndk",
+                "android.hardware.audio.effect-V3-ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -1367,6 +1595,32 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.android.ozoaudio.notify-V1-cpp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/com.android.ozoaudio.notify-V1-cpp.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
     prefer: true,
     system_ext_specific: true,
 }
@@ -18209,6 +18463,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhta_hexagon_runtime_qnn",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libhta_hexagon_runtime_qnn.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+                "libcdsprpc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhwliqinterface2",
     owner: "xiaomi",
     strip: {
@@ -22327,6 +22606,19 @@ prebuilt_rfsa {
 }
 
 android_app_import {
+    name: "MiSound",
+    owner: "xiaomi",
+    apk: "proprietary/product/app/MiSound/MiSound.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    skip_preprocessed_apk_checks: true,
+    product_specific: true,
+}
+
+android_app_import {
     name: "XMRemoteController",
     owner: "xiaomi",
     apk: "proprietary/product/app/XMRemoteController/XMRemoteController.apk",
@@ -23013,29 +23305,3 @@ install_symlink {
     installed_location: "lib64/hw/com.qti.chi.override.so",
     symlink_target: "/odm/lib64/hw/com.qti.chi.override.so",
 }
-
-// Xiaomi MiSound (audio effects UI). The APK keeps its stock signature, so it
-// must be imported as a presigned prebuilt instead of being copied with
-// PRODUCT_COPY_FILES (kati rejects APKs there).
-// targetSdkVersion is 36, and the build refuses presigned prebuilts at or above
-// 30 unless they are marked preprocessed: such an APK is already signed with
-// signature v2 and re-processing would destroy that signature.
-android_app_import {
-    name: "MiSound",
-    owner: "xiaomi",
-    apk: "proprietary/product/app/MiSound/MiSound.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    product_specific: true,
-}
-
-// NOTE: ozonotify-1.0.xml is deliberately NOT shipped as a vintf_fragment.
-// com.android.ozoaudio.notify is a Xiaomi-private HAL that is absent from the
-// AOSP framework compatibility matrix; declaring it makes
-// check_target_files_vintf fail with "files are incompatible" and the OTA
-// package cannot be generated. The service binary itself is not shipped by
-// stock either (its .rc is disabled + oneshot), so the declaration has no
-// functional effect. The xml is kept in proprietary/ for future use only.
